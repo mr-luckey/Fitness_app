@@ -27,7 +27,7 @@ class WeeklyWaterWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Nước uống mỗi tuần',
+              'Drinking water every week',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     color:
                         AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -42,7 +42,7 @@ class WeeklyWaterWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Obx(() => _buildExtraInfo(context,
-                title: 'ml nước đã uống',
+                title: 'ml of water drunk',
                 value: _controller.waterVolumeWeekly.value.toString())),
           ],
         ),
@@ -53,8 +53,8 @@ class WeeklyWaterWidget extends StatelessWidget {
           () => StatisticBarChart(
             values: _controller.waterVolumeList,
             title:
-                "Tuần ${_controller.waterStartDateStr} - ${_controller.waterEndDateStr}",
-            description: "Lượng nước đã uống (ml)",
+                "Week ${_controller.waterStartDateStr} - ${_controller.waterEndDateStr}",
+            description: "Amount of water drunk (ml)",
             titleColor: AppColor.statisticWaterTitleColor,
             descriptionColor: AppColor.statisticWaterDescriptionColor,
             backgroundColor: AppColor.statisticWaterBackgroundColor,

@@ -22,7 +22,7 @@ class WeeklyExerciseWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Luyện tập mỗi tuần',
+              'Practice every week',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     color:
                         AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -39,8 +39,8 @@ class WeeklyExerciseWidget extends StatelessWidget {
             Obx(
               () => _buildExtraInfo(context,
                   title: _controller.exerciseSecondsWeekly / 60 < 1
-                      ? 'giây luyện tập'
-                      : 'phút luyện tập',
+                      ? 'practice seconds'
+                      : 'practice minutes',
                   value: _controller.exerciseSecondsWeekly / 60 < 1
                       ? _controller.exerciseSecondsWeekly.toInt().toString()
                       : (_controller.exerciseSecondsWeekly / 60)
@@ -49,7 +49,7 @@ class WeeklyExerciseWidget extends StatelessWidget {
             ),
             Obx(
               () => _buildExtraInfo(context,
-                  title: 'calories tiêu hao',
+                  title: 'calories consumed',
                   value: _controller.exerciseCaloriesWeekly.toString()),
             ),
           ],
@@ -61,8 +61,8 @@ class WeeklyExerciseWidget extends StatelessWidget {
           () => StatisticBarChart(
             values: _controller.exerciseCaloList,
             title:
-                "Tuần ${_controller.exerciseStartDateStr.value} - ${_controller.exerciseEndDateStr.value}",
-            description: "Lượng calories tiêu hao (kcal)",
+                "Week ${_controller.exerciseStartDateStr.value} - ${_controller.exerciseEndDateStr.value}",
+            description: "Calories consumed (kcal)",
             onPressHandler: () async {
               DatePeriod? result = await showDialog(
                 context: context,

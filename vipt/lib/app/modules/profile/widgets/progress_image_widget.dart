@@ -23,7 +23,7 @@ class ProgressImageWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Hình ảnh quá trình',
+              'Process images',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     color:
                         AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -39,7 +39,7 @@ class ProgressImageWidget extends StatelessWidget {
           children: [
             Expanded(
               child: CameraButton(
-                title: 'Ảnh trước',
+                title: 'Previous photo',
                 onPressed: () async {
                   final result = await _handlePickImage(context);
                   if (result != null) {
@@ -61,7 +61,7 @@ class ProgressImageWidget extends StatelessWidget {
             ),
             Expanded(
               child: CameraButton(
-                title: 'Ảnh sau',
+                title: 'Next photo',
                 onPressed: () async {
                   final result = await _handlePickImage(context);
                   if (result != null) {

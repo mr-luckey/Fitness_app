@@ -96,7 +96,7 @@ class _RangePickerDialogState extends State<RangePickerDialog> {
               children: [
                 TextButton(
                   child: Text(
-                    'Hủy bỏ',
+                    'Cancel',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.textColor
                               .withOpacity(AppColor.subTextOpacity),
@@ -108,7 +108,7 @@ class _RangePickerDialogState extends State<RangePickerDialog> {
                 ),
                 TextButton(
                   child: Text(
-                    'Xác nhận',
+                    'Confirm',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.primaryColor,
                         ),

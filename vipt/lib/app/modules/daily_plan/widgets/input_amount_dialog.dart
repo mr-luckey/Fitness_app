@@ -22,7 +22,7 @@ class InputAmountDialog extends StatefulWidget {
       this.confirmButtonColor,
       this.sliderActiveColor,
       this.sliderInactiveColor,
-      this.confirmButtonText = 'Xác nhận'})
+      this.confirmButtonText = 'Confirm'})
       : super(key: key);
 
   @override

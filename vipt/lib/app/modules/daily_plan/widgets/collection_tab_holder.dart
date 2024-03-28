@@ -46,10 +46,10 @@ class _CollectionTabHolderState extends State<CollectionTabHolder>
             labelStyle: Theme.of(context).textTheme.caption,
             tabs: const [
               Tab(
-                text: 'Mặc định',
+                text: 'Default',
               ),
               Tab(
-                text: 'Cá nhân',
+                text: 'Individual',
               ),
             ],
           ),

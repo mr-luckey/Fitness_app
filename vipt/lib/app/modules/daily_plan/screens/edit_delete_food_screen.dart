@@ -84,10 +84,10 @@ class EditDeleteFoodScreen extends StatelessWidget {
                 Obx(
                   () => EditableIntroCollectionWidget(
                     titleTextController: nameTextController,
-                    hintTitle: 'Nhập tên thức ăn',
+                    hintTitle: 'Enter the food name',
                     errorText: _controller.isTextFieldValidate.value
                         ? null
-                        : 'Hãy điền tên thức ăn',
+                        : 'Please fill in the name of the food',
                     titleTextStyle: Theme.of(context).textTheme.headline3,
                   ),
                 ),
@@ -149,7 +149,7 @@ class EditDeleteFoodScreen extends StatelessWidget {
                   unit: 'g',
                   value: carbs.toInt(),
                   confirmButtonColor: AppColor.carbCubeColor,
-                  confirmButtonText: 'Xác nhận',
+                  confirmButtonText: 'Confirm',
                   sliderActiveColor: AppColor.carbCubeColor,
                   sliderInactiveColor: AppColor.carbCubeColor.withOpacity(
                     AppColor.subTextOpacity,
@@ -180,7 +180,7 @@ class EditDeleteFoodScreen extends StatelessWidget {
                   unit: 'g',
                   value: protein.toInt(),
                   confirmButtonColor: AppColor.proteinCubeColor,
-                  confirmButtonText: 'Xác nhận',
+                  confirmButtonText: 'Confirm',
                   sliderActiveColor: AppColor.proteinCubeColor,
                   sliderInactiveColor: AppColor.proteinCubeColor.withOpacity(
                     AppColor.subTextOpacity,
@@ -211,7 +211,7 @@ class EditDeleteFoodScreen extends StatelessWidget {
                   unit: 'g',
                   value: fat.toInt(),
                   confirmButtonColor: AppColor.fatCubeColor,
-                  confirmButtonText: 'Xác nhận',
+                  confirmButtonText: 'Confirm',
                   sliderActiveColor: AppColor.fatCubeColor,
                   sliderInactiveColor: AppColor.fatCubeColor.withOpacity(
                     AppColor.subTextOpacity,
@@ -248,7 +248,7 @@ class EditDeleteFoodScreen extends StatelessWidget {
                 unit: 'kcal',
                 value: amount.toInt(),
                 confirmButtonColor: AppColor.nutriBackgroundColor,
-                confirmButtonText: 'Xác nhận',
+                confirmButtonText: 'Confirm',
                 sliderActiveColor: AppColor.nutriBackgroundColor,
                 sliderInactiveColor: AppColor.nutriBackgroundColor.withOpacity(
                   AppColor.subTextOpacity,
@@ -298,14 +298,14 @@ class EditDeleteFoodScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Hướng dẫn',
+          'Instruct',
           style: Theme.of(context).textTheme.headline5,
         ),
         const SizedBox(
           height: 4,
         ),
         Text(
-          'Chạm vào các vị trí Tên, Calories, Carbs, Protein, Fat để thay đổi giá trị tương ứng.',
+          'Touch the positions Name, Calories, Carbs, Protein, Fat to change the corresponding values.',
           style: Theme.of(context).textTheme.bodyText1,
         ),
       ],

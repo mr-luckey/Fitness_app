@@ -7,7 +7,7 @@ class AppTheme {
   static final ElevatedButtonThemeData _elevatedButtonThemeData =
       ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      primary: AppColor.primaryColor,
+      backgroundColor: AppColor.primaryColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
     ),
   );
@@ -15,7 +15,7 @@ class AppTheme {
   static final TextButtonThemeData _secondaryButtonDarkThemeData =
       TextButtonThemeData(
     style: TextButton.styleFrom(
-      primary: Colors.white,
+      foregroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5),
       ),
@@ -24,7 +24,7 @@ class AppTheme {
   static final TextButtonThemeData _secondaryButtonLightThemeData =
       TextButtonThemeData(
     style: TextButton.styleFrom(
-      primary: AppColor.primaryColor,
+      foregroundColor: AppColor.primaryColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5),
       ),
@@ -34,7 +34,7 @@ class AppTheme {
   static final OutlinedButtonThemeData _outlinedButtonDarkThemeData =
       OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      primary: Colors.white,
+      foregroundColor: Colors.white,
       side: const BorderSide(color: Colors.white, width: 2),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -44,7 +44,7 @@ class AppTheme {
   static final OutlinedButtonThemeData _outlinedButtonLightThemeData =
       OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      primary: AppColor.primaryColor,
+      foregroundColor: AppColor.primaryColor,
       side: const BorderSide(color: AppColor.primaryColor, width: 2),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(10)),

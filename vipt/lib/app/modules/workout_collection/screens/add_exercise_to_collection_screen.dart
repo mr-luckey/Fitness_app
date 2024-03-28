@@ -34,7 +34,7 @@ class AddExerciseToCollectionScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Thêm bài tập'.tr,
+            'Add exercises',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -97,7 +97,7 @@ Widget _buildSearchResultListView(
         alignment: Alignment.center,
         child: Obx(
           () => Text(
-            'Đã chọn ${_controller.selectValueList.length} bài tập',
+            'Selected ${_controller.selectValueList.length} exercise',
             style: Theme.of(Get.context!).textTheme.subtitle1,
           ),
         ),
@@ -137,7 +137,7 @@ Widget _buildInitialListView(context, _controller) {
         alignment: Alignment.center,
         child: Obx(
           () => Text(
-            'Đã chọn ${_controller.selectValueList.length} bài tập',
+            'Selected ${_controller.selectValueList.length} exercise',
             style: Theme.of(Get.context!).textTheme.subtitle1,
           ),
         ),

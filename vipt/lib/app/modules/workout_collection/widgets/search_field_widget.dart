@@ -25,7 +25,7 @@ class SearchFieldWidget extends StatelessWidget {
           fillColor: AppColor.textFieldFill.withOpacity(
             AppColor.subTextOpacity,
           ),
-          hintText: 'Tìm kiếm'.tr,
+          hintText: 'Search',
           border: const OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.all(

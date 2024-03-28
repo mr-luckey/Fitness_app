@@ -21,7 +21,7 @@ class ImagePickerDialog extends StatelessWidget {
             children: [
               CameraButton(
                 iconData: Icons.photo,
-                title: 'Từ thư viện',
+                title: 'From the library',
                 onPressed: () {
                   Navigator.pop(context, ImagePickerSource.gallery);
                 },
@@ -31,7 +31,7 @@ class ImagePickerDialog extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context, ImagePickerSource.camera);
                 },
-                title: 'Chụp ảnh',
+                title: 'Take a photo',
               ),
             ],
           ),

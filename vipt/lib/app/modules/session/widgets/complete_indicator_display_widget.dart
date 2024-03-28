@@ -45,7 +45,7 @@ class CompleteIndicatorDisplayWidget extends StatelessWidget {
           context,
           asset: SVGAssetString.yoga_2,
           value: exerciseCountString,
-          unit: 'bài tập'.tr,
+          unit: 'exercise',
         ),
         const SizedBox(
           width: 16,
@@ -63,7 +63,7 @@ class CompleteIndicatorDisplayWidget extends StatelessWidget {
           context,
           asset: SVGAssetString.fire,
           value: caloString,
-          unit: 'calo'.tr,
+          unit: 'calories. calories',
         ),
       ],
     );

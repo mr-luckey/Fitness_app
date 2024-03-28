@@ -7,6 +7,7 @@ import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:vipt/app/core/values/asset_strings.dart';
 import 'package:vipt/app/core/values/colors.dart';
 
+///comment for language changing code @@@
 class BodyStatusScreen extends StatefulWidget {
   const BodyStatusScreen({Key? key}) : super(key: key);
 
@@ -29,57 +30,51 @@ class _BodyStatusScreenState extends State<BodyStatusScreen> {
   Widget build(BuildContext context) {
     List<Map<String, String>> bodyStatusList = [
       {
-        'name': 'Đường huyết tăng'.tr,
+        'name': 'Blood sugar increases',
         'asset': SVGAssetString.bloodSugarRises,
         'selectedAsset': SVGAssetString.selectedBloodSugarRises,
         'content':
-            'Nhịn ăn theo nhịp sinh học là một cách tuyệt vời để dễ dàng nhịn ăn. Nó phù hợp với sự trao đổi chất tự nhiên của cơ thể, vì vậy bạn chỉ ăn khi ở trạng thái đầy đủ. Nhịn ăn có thể giúp giảm cân và thậm chí ngăn ngừa loại bệnh.'
-                .tr,
+            'Circadian fasting is a great way to ease into fasting. It matches your body\'s natural metabolism, so you only eat when you\'re full. Fasting can help with weight loss and even prevent diseases.',
         'duration': '0h - 4h',
       },
       {
-        'name': 'Đường huyết giảm'.tr,
+        'name': 'Blood sugar drops',
         'asset': SVGAssetString.bloodSugarFalls,
         'selectedAsset': SVGAssetString.selectedBloodSugarFalls,
         'content':
-            'Lượng đường trong máu của bạn tiếp tục giảm khi cơ thể bắt đầu đốt cháy chất béo để lấy năng lượng.'
-                .tr,
+            'Your blood sugar continues to fall as your body starts burning fat for energy.',
         'duration': '4h - 8h',
       },
       {
-        'name': 'Đường huyết ổn định'.tr,
+        'name': 'Stable blood sugar',
         'asset': SVGAssetString.bloodSugarStabilizes,
         'selectedAsset': SVGAssetString.selectedBloodSugarStabilizes,
         'content':
-            'Lượng đường trong máu của bạn đang ở mức thấp nhất, điều này báo cho cơ thể bạn chuyển sang chất béo để lấy năng lượng.'
-                .tr,
+            'Your blood sugar levels are at their lowest, which tells your body to turn to fat for energy.',
         'duration': '8h - 12h',
       },
       {
-        'name': 'Ketosis'.tr,
+        'name': 'Ketosis',
         'asset': SVGAssetString.ketosis,
         'selectedAsset': SVGAssetString.selectedKetosis,
         'content':
-            'Sau 8-12 giờ, glucose trong máu trở nên khan hiếm. Tại thời điểm này, cơ thể bạn bắt đầu đốt cháy các axit béo.\n\nĐiều này dẫn đến việc sản xuất xeton, một hợp chất hữu cơ dễ cháy. Khi bạn đang trong tình trạng ketosis, cơ thể bạn đang đốt cháy chất béo.\n\nTại thời điểm này, gan của bạn sản xuất xeton đốt cháy chất béo thay vì carbohydrate để làm nhiên liệu. Điều này làm giảm mức insulin, khiến cơ thể bạn đốt cháy nhiều chất béo hơn để làm nhiên liệu.'
-                .tr,
+            'After 8-12 hours, glucose in the blood becomes scarce. At this point, your body begins to burn fatty acids.\n\nThis leads to the production of ketones, a flammable organic compound. When you are in ketosis, your body is burning fat.\n\nAt this time, your liver produces ketones that burn fat instead of carbohydrates for fuel. This lowers insulin levels, causing your body to burn more fat for fuel.',
         'duration': '12h - 14h',
       },
       {
-        'name': 'Trao đổi chất'.tr,
+        'name': 'Metabolically',
         'asset': SVGAssetString.metabolism,
         'selectedAsset': SVGAssetString.selectedMetabolism,
         'content':
-            'Thời gian nhịn ăn lâu hơn cho phép bạn đốt cháy nhiều chất béo hơn. Trong giai đoạn này, cơ thể bạn đang sản xuất xeton với tốc độ nhanh chóng vì không có glucose trong hệ thống. Điều này giúp tăng cường trao đổi chất và giảm viêm.'
-                .tr,
+            'Longer fasting periods allow you to burn more fat. During this phase, your body is producing ketones at a rapid rate because there is no glucose in the system. This helps boost metabolism and reduce inflammation.',
         'duration': '14h - 16h',
       },
       {
-        'name': 'Tự thực bào'.tr,
+        'name': 'Autophagy'.tr,
         'asset': SVGAssetString.autophagy,
         'selectedAsset': SVGAssetString.selectedAutophagy,
         'content':
-            'Sau 12 giờ nhịn ăn, autophagy bắt đầu hoạt động. Nó có nghĩa là \'tự ăn\', bởi vì các tế bào của bạn bắt đầu tiêu thụ các protein bị hư hỏng của chính chúng.\n\nNhịn ăn hơn 12 giờ có thể thúc đẩy hormone tăng trưởng lên đến 2.000 phần trăm. Điều này là do nhịn ăn giúp giải phóng một hợp chất khác gọi là IGFBP1.\n\nMức độ IGFBP1 cao hơn có nghĩa là tăng cơ tốt hơn, tăng cường chức năng nhận thức và bảo vệ chống lại tác động của lão hóa.'
-                .tr,
+            'After 12 hours of fasting, autophagy begins to work. It means \'self-eating\', because your cells start consuming their own damaged proteins.\n\nFasting for more than 12 hours can boost growth hormone by up to 2,000 parts hundred. This is because fasting helps release another compound called IGFBP1.\n\nHigher levels of IGFBP1 mean better muscle gain, enhanced cognitive function and protection against the effects of aging. ',
         'duration': '16h+',
       },
     ];
@@ -108,7 +103,7 @@ class _BodyStatusScreenState extends State<BodyStatusScreen> {
         ),
         centerTitle: true,
         title: Text(
-          'Trạng thái cơ thể'.tr,
+          'Body condition',
           style: Theme.of(context).textTheme.headline4!.copyWith(
                 color: AppColor.accentTextColor,
               ),

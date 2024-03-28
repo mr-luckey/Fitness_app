@@ -26,7 +26,7 @@ class _CustomSliderState extends State<CustomSlider> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
-            'Hệ số',
+            'Coefficient',
             style: Theme.of(context).textTheme.headline5,
           ),
         ),

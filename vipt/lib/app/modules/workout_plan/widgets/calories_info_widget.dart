@@ -50,7 +50,7 @@ class _CaloriesInfoWidgetState extends State<CaloriesInfoWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Calories mỗi ngày',
+                    'Calories per day',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.accentTextColor,
                         ),
@@ -79,13 +79,13 @@ class _CaloriesInfoWidgetState extends State<CaloriesInfoWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Hiện tại',
+                      'Present',
                       style: Theme.of(context).textTheme.headline5!.copyWith(
                             fontWeight: FontWeight.w900,
                           ),
                     ),
                     Text(
-                      'Mục tiêu',
+                      'Target',
                       style: Theme.of(context).textTheme.headline5!.copyWith(
                             fontWeight: FontWeight.w900,
                           ),
@@ -144,7 +144,7 @@ class _CaloriesInfoWidgetState extends State<CaloriesInfoWidget> {
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: Text(
-                        'Tự động đề xuất',
+                        'Auto-suggest',
                         style: Theme.of(context).textTheme.headline5!.copyWith(
                               color: AppColor.accentTextColor,
                             ),
@@ -170,7 +170,7 @@ class _CaloriesInfoWidgetState extends State<CaloriesInfoWidget> {
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: Text(
-                        'Thay đổi mục tiêu',
+                        'Change goals',
                         style: Theme.of(context).textTheme.headline5!.copyWith(
                               color: AppColor.logWeightButtonColor,
                             ),

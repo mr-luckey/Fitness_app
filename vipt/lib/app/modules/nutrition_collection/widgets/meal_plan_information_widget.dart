@@ -39,7 +39,7 @@ class MealPlanInformationWidget extends StatelessWidget {
             height: 8,
           ),
           IndicatorDisplayWidget(
-            displayTime: '${mealPlan.dateToMealID.length} ngày',
+            displayTime: '${mealPlan.dateToMealID.length} day',
             onlyTime: true,
             dateTime: true,
           ),
@@ -125,7 +125,7 @@ class MealPlanInformationWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Calories mỗi ngày',
+              'Calories per day',
               style: Theme.of(context).textTheme.headline5,
             ),
             Text(

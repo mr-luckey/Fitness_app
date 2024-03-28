@@ -22,10 +22,10 @@ class DailyWaterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> tabs = [
-      'Dinh dưỡng',
-      'Luyện tập',
-      'Nước',
-      'Bước chân',
+      'Nutrition',
+      'Practice',
+      'Water',
+      'Step',
       'Fasting',
     ];
 
@@ -101,7 +101,7 @@ class DailyWaterScreen extends StatelessWidget {
                           width: 8,
                         ),
                         Text(
-                          'Hôm nay'.tr,
+                          'Today',
                           style:
                               Theme.of(context).textTheme.headline6!.copyWith(
                                     color: AppColor.accentTextColor,
@@ -171,11 +171,11 @@ class DailyWaterScreen extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return InputAmountDialog(
-                title: 'Nước',
+                title: 'Water',
                 unit: 'ml',
                 value: 200,
                 confirmButtonColor: AppColor.waterBackgroundColor,
-                confirmButtonText: 'Thêm',
+                confirmButtonText: 'More',
                 sliderActiveColor: AppColor.waterDarkBackgroundColor,
                 sliderInactiveColor: AppColor.waterBackgroundColor.withOpacity(
                   AppColor.subTextOpacity,
@@ -196,7 +196,7 @@ class DailyWaterScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(36, 0, 36, 24),
       child: Text(
-        'Chạm vào giọt nước để cập nhật lượng nước đã uống.',
+        'Touch the water drop to update the amount of water drunk.',
         style: Theme.of(context).textTheme.bodyText1!.copyWith(
               color: AppColor.accentTextColor,
             ),

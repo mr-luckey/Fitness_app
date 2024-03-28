@@ -17,10 +17,10 @@ class DailyStepScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> tabs = [
-      'Dinh dưỡng',
-      'Luyện tập',
-      'Nước',
-      'Bước chân',
+      'Nutrition',
+      'Practice',
+      'Water',
+      'Step',
       'Fasting',
     ];
 
@@ -158,7 +158,7 @@ class DailyStepScreen extends StatelessWidget {
         GoalProgressIndicator(
           radius: screenWidth * 0.36,
           value: _controller.steps.value,
-          unitString: 'bước chân',
+          unitString: 'step',
         ),
         const SizedBox(
           height: 16,

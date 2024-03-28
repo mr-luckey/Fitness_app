@@ -29,10 +29,10 @@ class DailyExerciseScreen extends StatelessWidget {
         kToolbarHeight -
         kBottomNavigationBarHeight;
     List<String> tabs = [
-      'Dinh dưỡng',
-      'Luyện tập',
-      'Nước',
-      'Bước chân',
+      'Nutrition',
+      'Practice',
+      'Water',
+      'Step',
       'Fasting',
     ];
 
@@ -107,7 +107,7 @@ class DailyExerciseScreen extends StatelessWidget {
                           width: 8,
                         ),
                         Text(
-                          'Hôm nay'.tr,
+                          'Today',
                           style:
                               Theme.of(context).textTheme.headline6!.copyWith(
                                     color: AppColor.accentTextColor,
@@ -160,7 +160,7 @@ class DailyExerciseScreen extends StatelessWidget {
                             child: Column(
                               children: [
                                 Text(
-                                  "LUYỆN TẬP".tr,
+                                  "PRACTICE",
                                   style: Theme.of(context)
                                       .textTheme
                                       .subtitle2!
@@ -206,7 +206,7 @@ class DailyExerciseScreen extends StatelessWidget {
             width: screenWidth * 0.3,
             child: VerticalInfoWidget(
               title: controller.sessions.value.toString(),
-              subtitle: 'phiên tập',
+              subtitle: 'practice session',
             ),
           ),
           Hero(
@@ -214,7 +214,7 @@ class DailyExerciseScreen extends StatelessWidget {
             child: GoalProgressIndicator(
               radius: screenWidth * 0.3,
               value: controller.calories.value,
-              unitString: 'calories tiêu hao',
+              unitString: 'calories consumed',
             ),
           ),
           SizedBox(
@@ -223,7 +223,7 @@ class DailyExerciseScreen extends StatelessWidget {
               title: controller.time / 60 < 1
                   ? controller.time.toInt().toString()
                   : (controller.time.value / 60).ceil().toString(),
-              subtitle: controller.time / 60 < 1 ? 'giây' : 'phút',
+              subtitle: controller.time / 60 < 1 ? 'second' : 'minute',
             ),
           ),
         ],
@@ -243,11 +243,11 @@ class DailyExerciseScreen extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return InputAmountDialog(
-                title: 'Calories đã đốt cháy',
+                title: 'Calories burned',
                 unit: 'kcal',
                 value: 200,
                 confirmButtonColor: AppColor.exerciseBackgroundColor,
-                confirmButtonText: 'Thêm',
+                confirmButtonText: 'More',
                 sliderActiveColor: AppColor.exerciseBackgroundColor,
                 sliderInactiveColor:
                     AppColor.exerciseBackgroundColor.withOpacity(
@@ -272,7 +272,7 @@ class DailyExerciseScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(36, 0, 36, 24),
       child: Text(
-        'Chạm vào trái tim màu đỏ để cập nhật lượng calories đã đốt cháy.',
+        'Tap on the red heart to update the number of calories burned.',
         style: Theme.of(context).textTheme.bodyText1!.copyWith(
               color: AppColor.accentTextColor,
             ),

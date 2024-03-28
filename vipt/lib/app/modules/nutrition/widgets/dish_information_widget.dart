@@ -32,7 +32,7 @@ class DishInformationWidget extends StatelessWidget {
             height: 8,
           ),
           IndicatorDisplayWidget(
-            displayTime: '${mealNutrition.meal.cookTime} phút',
+            displayTime: '${mealNutrition.meal.cookTime} minute',
             onlyTime: true,
           ),
           const SizedBox(

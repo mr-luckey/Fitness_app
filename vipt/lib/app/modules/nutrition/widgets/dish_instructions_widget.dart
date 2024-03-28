@@ -15,7 +15,7 @@ class DishInstructionsWidget extends StatelessWidget {
       children: [
         if (showTitle)
           Text(
-            'Hướng dẫn',
+            'Instruct',
             style: Theme.of(context).textTheme.headline3!.copyWith(
                   color:
                       AppColor.textColor.withOpacity(AppColor.subTextOpacity),

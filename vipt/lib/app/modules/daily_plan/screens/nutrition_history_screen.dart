@@ -38,7 +38,7 @@ class NutritionHistoryScreen extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          'Lịch sử dinh dưỡng',
+          'Nutritional history',
           style: Theme.of(context).textTheme.headline4!.copyWith(
                 color: AppColor.accentTextColor,
               ),
@@ -93,7 +93,7 @@ class NutritionHistoryScreen extends StatelessWidget {
               width: screenWidth * 0.3,
               child: VerticalInfoWidget(
                 title: intake.toString(),
-                subtitle: 'calories hấp thụ',
+                subtitle: 'absorbed calories',
               ),
             ),
           ],
@@ -178,7 +178,7 @@ class NutritionHistoryScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Lịch sử',
+                    'History',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.accentTextColor,
                         ),

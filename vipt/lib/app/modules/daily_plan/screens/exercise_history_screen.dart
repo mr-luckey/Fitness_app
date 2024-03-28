@@ -36,7 +36,7 @@ class ExerciseHistoryScreen extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          'Lịch sử luyện tập',
+          'Practice history',
           style: Theme.of(context).textTheme.headline4!.copyWith(
                 color: AppColor.accentTextColor,
               ),
@@ -73,7 +73,7 @@ class ExerciseHistoryScreen extends StatelessWidget {
           () => GoalProgressIndicator(
             radius: screenWidth * 0.3,
             value: controller.calories.value,
-            unitString: 'calories tiêu hao',
+            unitString: 'calories consumed',
           ),
         ),
       ),
@@ -94,7 +94,7 @@ class ExerciseHistoryScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Lịch sử',
+                    'History',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.accentTextColor,
                         ),
@@ -110,7 +110,7 @@ class ExerciseHistoryScreen extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: HistoryTile(
-                  title: 'Luyện tập',
+                  title: 'Practice',
                   description: log.outtakeCalories.toString() + 'calories',
                   date: '${log.date.day}/${log.date.month}/${log.date.year}',
                   time: '${log.date.hour}:${log.date.minute}',
@@ -137,11 +137,11 @@ class ExerciseHistoryScreen extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return InputAmountDialog(
-                title: 'Calories đã đốt cháy',
+                title: 'Calories burned',
                 unit: 'kcal',
                 value: 200,
                 confirmButtonColor: AppColor.exerciseBackgroundColor,
-                confirmButtonText: 'Thêm',
+                confirmButtonText: 'More',
                 sliderActiveColor: AppColor.exerciseBackgroundColor,
                 sliderInactiveColor:
                     AppColor.exerciseBackgroundColor.withOpacity(

@@ -77,7 +77,7 @@ class AuthenticationScreen extends StatelessWidget {
   }
 }
 
-// ********************** PHẦN BUILD CÁC THÀNH PHẦN **********************
+// ********************** BUILD PART COMPONENTS **********************
 
 // Hàm build phần giới thiệu
 Widget _buildIntroduction(context, {required Function() actionOnPressed}) {
@@ -97,11 +97,11 @@ Widget _buildIntroduction(context, {required Function() actionOnPressed}) {
               width: 12,
             ),
             Text(
-              'Xin chào, tôi là '.tr,
+              'Hello I am',
               style: Theme.of(context).textTheme.headline6,
             ),
             Text(
-              'ViPT'.tr,
+              'ViPT',
               style: Theme.of(context).textTheme.headline6!.copyWith(
                   fontWeight: FontWeight.w700,
                   color: Theme.of(context).primaryColor),
@@ -115,15 +115,14 @@ Widget _buildIntroduction(context, {required Function() actionOnPressed}) {
           ),
         ),
         Text(
-          'Hãy cùng nhau luyện tập nào!'.tr,
+          'Lets practice together!',
           style: Theme.of(context).textTheme.headline1,
         ),
         const SizedBox(
           height: 8,
         ),
         Text(
-          'Tôi sẽ giúp bạn có thể đạt được các mục tiêu thông qua lộ trình cụ thể.'
-              .tr,
+          'I will help you achieve your goals through a specific roadmap.',
           style: Theme.of(context).textTheme.bodyText1,
         ),
         const SizedBox(
@@ -135,8 +134,7 @@ Widget _buildIntroduction(context, {required Function() actionOnPressed}) {
           height: 46,
           child: ElevatedButton(
             onPressed: actionOnPressed,
-            child:
-                Text('Bắt đầu'.tr, style: Theme.of(context).textTheme.button),
+            child: Text('Begin', style: Theme.of(context).textTheme.button),
           ),
         ),
         const SizedBox(
@@ -172,15 +170,14 @@ Widget _buildAuthentication(context,
           ),
         ),
         Text(
-          'Trước hết hãy đăng nhập tài khoản!'.tr,
+          'First, log in to your account!',
           style: Theme.of(context).textTheme.headline1,
         ),
         const SizedBox(
           height: 8,
         ),
         Text(
-          'Việc đăng nhập này sẽ giúp lưu lại tiến trình tập luyện và dinh dưỡng của bạn.'
-              .tr,
+          'Logging in will help save your training and nutrition progress.',
           style: Theme.of(context).textTheme.bodyText1,
         ),
         const SizedBox(
@@ -214,7 +211,7 @@ Widget _buildSignInWithGoogleButton(context, {required Function() onPressed}) {
     child: ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        primary: AppColor.googleButtonBackgroundColor,
+        backgroundColor: AppColor.googleButtonBackgroundColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
       ),
       child: Row(
@@ -229,7 +226,7 @@ Widget _buildSignInWithGoogleButton(context, {required Function() onPressed}) {
           Expanded(
             flex: 5,
             child: Text(
-              'Truy cập bằng Google'.tr,
+              'Access with Google'.tr,
               style: Theme.of(context).textTheme.button!.copyWith(
                   fontSize: 14, color: AppColor.googleButtonForegroundColor),
               textAlign: TextAlign.center,
@@ -251,7 +248,7 @@ Widget _buildSignInWithFacebookButton(context,
     child: ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        primary: AppColor.facebookButtonBackgroundColor,
+        backgroundColor: AppColor.facebookButtonBackgroundColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
       ),
       child: Row(
@@ -267,7 +264,7 @@ Widget _buildSignInWithFacebookButton(context,
           Expanded(
             flex: 5,
             child: Text(
-              'Truy cập bằng Facebook'.tr,
+              'Access using Facebook',
               style: Theme.of(context).textTheme.button!.copyWith(
                   fontSize: 14, color: AppColor.facebookButtonForegroundColor),
               textAlign: TextAlign.center,

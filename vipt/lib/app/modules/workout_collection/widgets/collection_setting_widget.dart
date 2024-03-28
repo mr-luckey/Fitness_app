@@ -100,7 +100,7 @@ class CollectionSettingWidget extends StatelessWidget {
           },
         );
       },
-      title: 'Số vòng'.tr,
+      title: 'Number of rounds',
       trailing: controller.collectionSetting.value.round.toString(),
       iconData: Icons.repeat_rounded,
     );
@@ -134,7 +134,7 @@ class CollectionSettingWidget extends StatelessWidget {
           },
         );
       },
-      title: 'Số bài tập mỗi vòng'.tr,
+      title: 'Number of exercises per round',
       trailing:
           controller.collectionSetting.value.numOfWorkoutPerRound.toString(),
     );
@@ -171,7 +171,7 @@ class CollectionSettingWidget extends StatelessWidget {
           color: enabled ? AppColor.textColor : disabledColor,
         ),
         title: Text(
-          'Bắt đầu với khởi động'.tr,
+          'Start with the warm-up',
           style: enabled
               ? Theme.of(context)
                   .textTheme
@@ -217,7 +217,7 @@ class CollectionSettingWidget extends StatelessWidget {
           color: enabled ? AppColor.textColor : disabledColor,
         ),
         title: Text(
-          'Trộn ngẫu nhiên'.tr,
+          'Random mix',
           style: enabled
               ? Theme.of(context)
                   .textTheme
@@ -244,7 +244,7 @@ class CollectionSettingWidget extends StatelessWidget {
                 return Container(
                   alignment: Alignment.center,
                   child: Text(
-                    '$index giây',
+                    '$index second',
                     style: Theme.of(context).textTheme.headline4,
                   ),
                 );
@@ -257,8 +257,8 @@ class CollectionSettingWidget extends StatelessWidget {
               });
             });
       },
-      title: 'Thời gian mỗi bài'.tr,
-      trailing: '${controller.collectionSetting.value.exerciseTime} giây'.tr,
+      title: 'Time per lesson',
+      trailing: '${controller.collectionSetting.value.exerciseTime} second',
     );
   }
 
@@ -274,7 +274,7 @@ class CollectionSettingWidget extends StatelessWidget {
                 return Container(
                   alignment: Alignment.center,
                   child: Text(
-                    '$index giây',
+                    '$index second',
                     style: Theme.of(context).textTheme.headline4,
                   ),
                 );
@@ -287,8 +287,8 @@ class CollectionSettingWidget extends StatelessWidget {
               });
             });
       },
-      title: 'Thời gian chuyển'.tr,
-      trailing: '${controller.collectionSetting.value.transitionTime} giây'.tr,
+      title: 'Transfer time',
+      trailing: '${controller.collectionSetting.value.transitionTime} second',
     );
   }
 
@@ -304,7 +304,7 @@ class CollectionSettingWidget extends StatelessWidget {
                 return Container(
                   alignment: Alignment.center,
                   child: Text(
-                    '$index giây',
+                    '$index second',
                     style: Theme.of(context).textTheme.headline4,
                   ),
                 );
@@ -317,8 +317,8 @@ class CollectionSettingWidget extends StatelessWidget {
               });
             });
       },
-      title: 'Thời gian nghỉ'.tr,
-      trailing: '${controller.collectionSetting.value.restTime} giây'.tr,
+      title: 'Break time',
+      trailing: '${controller.collectionSetting.value.restTime} second',
     );
   }
 
@@ -335,7 +335,7 @@ class CollectionSettingWidget extends StatelessWidget {
                 return Container(
                   alignment: Alignment.center,
                   child: Text(
-                    'sau $index bài', // chỗ này có phải check thêm điều kiện count danh sách bài tập trong collection?
+                    'after $index post', // chỗ này có phải check thêm điều kiện count danh sách bài tập trong collection?
                     style: Theme.of(context).textTheme.headline4,
                   ),
                 );
@@ -348,9 +348,9 @@ class CollectionSettingWidget extends StatelessWidget {
               });
             });
       },
-      title: 'Lượt nghỉ'.tr,
+      title: 'Hit break',
       trailing:
-          'sau ${controller.collectionSetting.value.restFrequency} bài'.tr,
+          'after ${controller.collectionSetting.value.restFrequency} post',
     );
   }
 

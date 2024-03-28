@@ -62,7 +62,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                         children: [
                           const SizedBox(width: 8),
                           Text(
-                            'Lộ trình tập luyện',
+                            'Training route',
                             style: Theme.of(context)
                                 .textTheme
                                 .headline4!
@@ -119,7 +119,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                                           _shortcutToTabs(DailyPlanController
                                               .exerciseTabIndex);
                                         },
-                                        title: 'Luyện tập',
+                                        title: 'Practice',
                                         icon: SvgPicture.asset(
                                           SVGAssetString.shortcutExercise,
                                           height: 24,
@@ -132,7 +132,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                                           _shortcutToTabs(DailyPlanController
                                               .nutritionTabIndex);
                                         },
-                                        title: 'Dinh dưỡng',
+                                        title: 'Nutrition',
                                         icon: SvgPicture.asset(
                                           SVGAssetString.shortcutNutrition,
                                           height: 24,
@@ -145,7 +145,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                                           _shortcutToTabs(DailyPlanController
                                               .waterTabIndex);
                                         },
-                                        title: 'Nước uống',
+                                        title: 'Drinking water',
                                         icon: SvgPicture.asset(
                                           SVGAssetString.shortcutWater,
                                           height: 24,
@@ -157,7 +157,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                                         onPressed: () {
                                           _shortcutToTabs(null);
                                         },
-                                        title: 'Thống kê',
+                                        title: 'Statistical',
                                         icon: SvgPicture.asset(
                                           SVGAssetString.shortcutStatistics,
                                           height: 24,
@@ -203,26 +203,26 @@ class WorkoutPlanScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     return Obx(
       () => Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           SizedBox(
-            width: screenWidth * 0.25,
+            width: screenWidth * 0.21,
             child: VerticalInfoWidget(
               title: _controller.intakeCalories.value.toString(),
-              subtitle: 'hấp thụ',
+              subtitle: 'absorb',
             ),
           ),
           GoalProgressIndicator(
-            radius: screenWidth * 0.4,
+            radius: screenWidth * 0.2,
             value: _controller.dailyDiffCalories.value,
-            unitString: 'calories',
+            unitString: 'KCal',
             goalValue: _controller.dailyGoalCalories.value,
           ),
           SizedBox(
-            width: screenWidth * 0.25,
+            width: screenWidth * 0.21,
             child: VerticalInfoWidget(
               title: _controller.outtakeCalories.value.toString(),
-              subtitle: 'tiêu hao',
+              subtitle: 'consumption',
             ),
           ),
         ],

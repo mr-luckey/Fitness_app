@@ -102,7 +102,7 @@ class _WeekPickerDialogState extends State<WeekPickerDialog> {
               children: [
                 TextButton(
                   child: Text(
-                    'Hủy bỏ',
+                    'Cancel',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.textColor
                               .withOpacity(AppColor.subTextOpacity),
@@ -114,7 +114,7 @@ class _WeekPickerDialogState extends State<WeekPickerDialog> {
                 ),
                 TextButton(
                   child: Text(
-                    'Xác nhận',
+                    'Confirm',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.primaryColor,
                         ),

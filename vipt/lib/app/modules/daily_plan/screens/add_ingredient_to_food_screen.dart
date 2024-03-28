@@ -34,7 +34,7 @@ class AddIngredientToFoodScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Thêm nguyên liệu'.tr,
+            'Add ingredients'.tr,
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -95,7 +95,7 @@ Widget _buildSearchResultListView(
         alignment: Alignment.center,
         child: Obx(
           () => Text(
-            'Đã chọn ${_controller.selectValueList.length} nguyên liệu',
+            'Selected ${_controller.selectValueList.length} ingredient',
             style: Theme.of(Get.context!).textTheme.subtitle1,
           ),
         ),
@@ -135,7 +135,7 @@ Widget _buildInitialListView(context, _controller) {
         alignment: Alignment.center,
         child: Obx(
           () => Text(
-            'Đã chọn ${_controller.selectValueList.length} nguyên liệu',
+            'Selected ${_controller.selectValueList.length} ingredient',
             style: Theme.of(Get.context!).textTheme.subtitle1,
           ),
         ),

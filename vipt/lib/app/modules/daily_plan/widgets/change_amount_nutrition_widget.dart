@@ -128,7 +128,7 @@ class _ChangeAmountNutritionWidgetState
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
-                    'Khối lượng',
+                    'Mass',
                     style: Theme.of(context).textTheme.headline5,
                   ),
                 ),
@@ -195,7 +195,7 @@ class _ChangeAmountNutritionWidgetState
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
-                    'Lướt thanh trượt để tùy chỉnh lượng thành phần',
+                    'Slide the slider to customize ingredient amounts',
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ),

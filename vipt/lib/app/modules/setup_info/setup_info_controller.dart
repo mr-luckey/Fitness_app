@@ -128,7 +128,7 @@ class SetupInfoController extends GetxController {
               }
             }
           }
-          errorTextForTextField = '$text không phù hợp';
+          errorTextForTextField = '$text not suitable';
           isAbleToGoToNextQuestion = false;
           break;
         case PropertyLink.userWeight:
@@ -151,7 +151,7 @@ class SetupInfoController extends GetxController {
               }
             }
           }
-          errorTextForTextField = '$text không phù hợp';
+          errorTextForTextField = '$text not suitable';
           isAbleToGoToNextQuestion = false;
           break;
         case PropertyLink.userGoalWeight:
@@ -174,7 +174,7 @@ class SetupInfoController extends GetxController {
               }
             }
           }
-          errorTextForTextField = '$text không phù hợp';
+          errorTextForTextField = '$text not suitable';
           isAbleToGoToNextQuestion = false;
           break;
 
@@ -188,7 +188,7 @@ class SetupInfoController extends GetxController {
     String text = textFieldControllerForDatePickerLayout.text;
     if (text.isEmpty) {
       isAbleToGoToNextQuestion = false;
-      errorTextForTextField = "Ngày sinh không được để trống";
+      errorTextForTextField = "Date of birth cannot be blank";
     } else {
       DateFormat df = DateFormat('dd/MM/yyyy');
       try {
@@ -196,14 +196,14 @@ class SetupInfoController extends GetxController {
         int yearDiff = DateTime.now().year - date.year;
         if (yearDiff < 16 || yearDiff > 40) {
           isAbleToGoToNextQuestion = false;
-          errorTextForTextField = "Tuổi phải từ 16 tới 40";
+          errorTextForTextField = "Age must be between 16 and 40";
         } else {
           isAbleToGoToNextQuestion = true;
           errorTextForTextField = null;
         }
       } on FormatException catch (_) {
         isAbleToGoToNextQuestion = false;
-        errorTextForTextField = "Tuổi phải từ 16 tới 40";
+        errorTextForTextField = "Age must be from 16 to 40";
       }
     }
   }

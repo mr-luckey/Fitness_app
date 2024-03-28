@@ -63,13 +63,13 @@ class HomeScreen extends StatelessWidget {
     return [
       PersistentBottomNavBarItem(
         icon: const Icon(CupertinoIcons.home),
-        title: ("Lộ trình"),
+        title: ("Route"),
         activeColorPrimary: Theme.of(context).primaryColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.check_box_outlined),
-        title: ("Kế hoạch"),
+        title: ("Plan"),
         activeColorPrimary: Theme.of(context).primaryColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
@@ -81,13 +81,13 @@ class HomeScreen extends StatelessWidget {
       // ),
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.local_library_outlined),
-        title: ("Thư viện"),
+        title: ("Library"),
         activeColorPrimary: Theme.of(context).primaryColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(CupertinoIcons.person),
-        title: ("Cá nhân"),
+        title: ("Individual"),
         activeColorPrimary: Theme.of(context).primaryColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),

@@ -34,7 +34,7 @@ class SettingScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Cài đặt'.tr,
+            'Setting',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -86,7 +86,7 @@ class SettingScreen extends StatelessWidget {
             child: ListTile(
               dense: true,
               title: Text(
-                'Thông tin',
+                'Information',
                 style: Theme.of(context).textTheme.headline5,
               ),
             ),
@@ -98,7 +98,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Giới tính',
+                'Sex',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -112,7 +112,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Cân nặng mục tiêu',
+                'Target weight',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -126,7 +126,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Cân nặng hiện tại',
+                'Current weight',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -140,7 +140,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Chiều cao hiện tại',
+                'Current height',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -154,7 +154,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Tần suất hoạt động',
+                'Operating frequency',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -169,7 +169,7 @@ class SettingScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24, right: 8),
             child: ListTile(
               title: Text(
-                'Ngày sinh',
+                'Date of birth',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               trailing: Text(
@@ -189,7 +189,7 @@ class SettingScreen extends StatelessWidget {
               },
               leading: Icon(Icons.info, color: AppColor.textColor),
               title: Text(
-                'Thay đổi thông tin ban đầu',
+                'Change original information',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
@@ -202,7 +202,7 @@ class SettingScreen extends StatelessWidget {
               },
               leading: Icon(Icons.checklist_rounded, color: AppColor.textColor),
               title: Text(
-                'Thay đổi mục tiêu cân nặng',
+                'Change your weight goal',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
@@ -221,7 +221,7 @@ class SettingScreen extends StatelessWidget {
               leading:
                   Icon(Icons.exit_to_app_rounded, color: AppColor.textColor),
               title: Text(
-                'Đăng xuất',
+                'Log out',
                 style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
@@ -236,24 +236,24 @@ class SettingScreen extends StatelessWidget {
       case Gender.male:
         return 'Nam';
       case Gender.female:
-        return 'Nữ';
+        return 'Female';
       case Gender.other:
-        return 'Khác';
+        return 'Other';
     }
   }
 
   getActiveFrequencyString(ActiveFrequency activeFrequency) {
     switch (activeFrequency) {
       case ActiveFrequency.notMuch:
-        return 'Không nhiều';
+        return 'Not much';
       case ActiveFrequency.few:
-        return 'Ít';
+        return 'Little';
       case ActiveFrequency.average:
-        return 'Trung bình';
+        return 'Average';
       case ActiveFrequency.much:
-        return 'Nhiều';
+        return 'Many';
       case ActiveFrequency.soMuch:
-        return 'Rất nhiều';
+        return 'A lot';
     }
   }
 }

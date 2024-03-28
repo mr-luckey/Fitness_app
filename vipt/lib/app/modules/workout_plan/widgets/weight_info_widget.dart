@@ -46,7 +46,7 @@ class _WeightInfoWidgetState extends State<WeightInfoWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Cân nặng',
+                      'Weight',
                       style: Theme.of(context).textTheme.headline5!.copyWith(
                             color: AppColor.accentTextColor,
                           ),
@@ -75,13 +75,13 @@ class _WeightInfoWidgetState extends State<WeightInfoWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Hiện tại',
+                        'Present',
                         style: Theme.of(context).textTheme.headline5!.copyWith(
                               fontWeight: FontWeight.w900,
                             ),
                       ),
                       Text(
-                        'Mục tiêu',
+                        'Target',
                         style: Theme.of(context).textTheme.headline5!.copyWith(
                               fontWeight: FontWeight.w900,
                             ),
@@ -153,7 +153,7 @@ class _WeightInfoWidgetState extends State<WeightInfoWidget> {
                           borderRadius: BorderRadius.circular(5),
                         ),
                         child: Text(
-                          'Cập nhật cân nặng',
+                          'Update weight',
                           style:
                               Theme.of(context).textTheme.headline5!.copyWith(
                                     color: AppColor.accentTextColor,

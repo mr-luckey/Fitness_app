@@ -54,7 +54,7 @@ class LogFoodScreen extends StatelessWidget {
             title: Hero(
               tag: 'titleAppBar',
               child: Text(
-                'Thêm thức ăn'.tr,
+                'Add food',
                 style: Theme.of(context).textTheme.headline3,
               ),
             ),
@@ -78,11 +78,11 @@ class LogFoodScreen extends StatelessWidget {
               tabs: const [
                 Tab(
                   height: 20,
-                  text: 'Mặc định',
+                  text: 'Default',
                 ),
                 Tab(
                   height: 20,
-                  text: 'Cá nhân',
+                  text: 'Individual',
                 ),
               ],
             ),
@@ -156,7 +156,7 @@ class LogFoodScreen extends StatelessWidget {
       label: SizedBox(
         width: MediaQuery.of(context).size.width * 0.75,
         child: Text(
-          'Tạo món ăn mới'.tr,
+          'Create new dishes',
           style: Theme.of(context)
               .textTheme
               .button!
@@ -263,7 +263,7 @@ Widget _buildInitialListView(
         margin: const EdgeInsets.only(bottom: 4, top: 8),
         alignment: Alignment.center,
         child: Text(
-          'Đã chọn ${selectedList.length} thức ăn',
+          'Selected ${selectedList.length} food',
           style: Theme.of(Get.context!).textTheme.subtitle1,
         ),
       ),

@@ -93,7 +93,7 @@ class _WorkoutSessionScreenState extends State<WorkoutSessionScreen> {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Tên bộ luyện tập'.tr,
+            'Name of the practice set',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -301,7 +301,7 @@ class _WorkoutSessionScreenState extends State<WorkoutSessionScreen> {
                 width: 16,
               ),
               Text(
-                '${_controller.workoutIndex + 1} trên ${_controller.workoutList.length}',
+                '${_controller.workoutIndex + 1} above ${_controller.workoutList.length}',
                 style: Theme.of(context)
                     .textTheme
                     .subtitle2!
@@ -371,11 +371,11 @@ class _WorkoutSessionScreenState extends State<WorkoutSessionScreen> {
       case TimerStatus.play:
         return '';
       case TimerStatus.pause:
-        return 'TẠM DỪNG';
+        return 'PAUSE';
       case TimerStatus.rest:
-        return 'NGHỈ';
+        return 'REST';
       default:
-        return 'SẴN SÀNG';
+        return 'READY';
     }
   }
 
@@ -566,10 +566,10 @@ class _WorkoutSessionScreenState extends State<WorkoutSessionScreen> {
       context: context,
       builder: (BuildContext context) {
         return CustomConfirmationDialog(
-          label: 'Kết thúc luyện tập?',
-          content: 'Tiến trình sẽ không được lưu lại',
-          labelCancel: 'Kết thúc',
-          labelOk: 'Tiếp tục luyện tập',
+          label: 'End of practice?',
+          content: 'Progress will not be saved',
+          labelCancel: 'End',
+          labelOk: 'Continue practicing',
           onCancel: () {
             Navigator.of(context).pop('stop');
           },

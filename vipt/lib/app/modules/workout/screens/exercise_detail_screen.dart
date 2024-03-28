@@ -151,7 +151,7 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
                     bottom: 8,
                   ),
                   child: Text(
-                    'Trang thiết bị/dụng cụ',
+                    'Equipment/tools',
                     style: Theme.of(context).textTheme.headline4,
                   ),
                 ),
@@ -200,7 +200,7 @@ class _ExerciseDetailState extends State<ExerciseDetail> {
               Container(
                 padding: const EdgeInsets.only(top: 24, bottom: 8),
                 child: Text(
-                  'Nhóm cơ tập trung',
+                  'Concentrated muscle groups',
                   style: Theme.of(context).textTheme.headline4,
                 ),
               ),

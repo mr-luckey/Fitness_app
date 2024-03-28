@@ -28,7 +28,7 @@ class WeeklyNutritionWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Dinh dưỡng mỗi tuần',
+              'Nutrition every week',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     color:
                         AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -43,7 +43,7 @@ class WeeklyNutritionWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Obx(() => _buildExtraInfo(context,
-                title: 'calories hấp thụ',
+                title: 'calories absorbed',
                 value: _controller.nutritionCaloWeekly.value.toString())),
           ],
         ),
@@ -54,8 +54,8 @@ class WeeklyNutritionWidget extends StatelessWidget {
           () => StatisticBarChart(
             values: _controller.nutritionCaloList,
             title:
-                "Tuần ${_controller.nutritionStartDateStr.value} - ${_controller.nutritionEndDateStr.value}",
-            description: "Lượng calories hấp thụ (kcal)",
+                "Week ${_controller.nutritionStartDateStr.value} - ${_controller.nutritionEndDateStr.value}",
+            description: "Calorie intake (kcal)",
             titleColor: AppColor.statisticNutritionTitleColor,
             descriptionColor: AppColor.statisticNutritionDescriptionColor,
             backgroundColor: AppColor.statisticNutritionBackgroundColor,

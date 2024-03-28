@@ -63,7 +63,7 @@ class MyWorkoutCollectionDetailScreen extends StatelessWidget {
             label: SizedBox(
               width: MediaQuery.of(context).size.width * 0.75,
               child: Text(
-                'Bắt đầu luyện tập'.tr,
+                'Start practicing',
                 style: Theme.of(context).textTheme.button,
                 textAlign: TextAlign.center,
               ),
@@ -121,7 +121,7 @@ class MyWorkoutCollectionDetailScreen extends StatelessWidget {
                 return IndicatorDisplayWidget(
                   displayTime: '${_controller.displayTime}'.tr,
                   displayCaloValue:
-                      '${_controller.caloValue.value.toInt()} calo'.tr,
+                      '${_controller.caloValue.value.toInt()} cal',
                 );
               }),
               const SizedBox(
@@ -141,7 +141,7 @@ class MyWorkoutCollectionDetailScreen extends StatelessWidget {
                 builder: (_) => ExerciseListWidget(
                     workoutList: _controller.generatedWorkoutList,
                     displayExerciseTime:
-                        '${_controller.collectionSetting.value.exerciseTime} giây'),
+                        '${_controller.collectionSetting.value.exerciseTime} second'),
               ),
               SizedBox(
                 height: Theme.of(context).textTheme.button!.fontSize! * 4,

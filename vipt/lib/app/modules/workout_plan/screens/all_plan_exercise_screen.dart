@@ -44,7 +44,7 @@ class AllPlanExerciseScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: Text(
-              'DANH SÁCH BÀI LUYỆN TẬP',
+              'LIST OF PRACTICE WORKOUTS',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     fontWeight: FontWeight.w900,
                   ),
@@ -121,7 +121,7 @@ class AllPlanExerciseScreen extends StatelessWidget {
                   //   height: 24,
                   // ),
                   Text(
-                    'NGÀY ${i ~/ collectionPerDay + 1}',
+                    'DAY ${i ~/ collectionPerDay + 1}',
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),

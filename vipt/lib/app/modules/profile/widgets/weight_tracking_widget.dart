@@ -32,7 +32,7 @@ class WeightTrackingWidget extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Theo dõi cân nặng',
+                'Track your weight',
                 style: Theme.of(context).textTheme.headline4!.copyWith(
                       color: AppColor.textColor
                           .withOpacity(AppColor.subTextOpacity),
@@ -47,8 +47,8 @@ class WeightTrackingWidget extends StatelessWidget {
         StatisticLineChart(
           dateRange: timeRange,
           values: weighTracks,
-          title: "Từ $startDateStr - $endDateStr",
-          description: "Cân nặng (kg)",
+          title: "From $startDateStr - $endDateStr",
+          description: "Weight (kg)",
           onPressHandler: () async {
             final DatePeriod? result = await showDialog(
               context: context,

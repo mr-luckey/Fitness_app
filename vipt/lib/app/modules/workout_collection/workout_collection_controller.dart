@@ -166,11 +166,11 @@ class WorkoutCollectionController extends GetxController {
       context: Get.context!,
       builder: (BuildContext context) {
         return CustomConfirmationDialog(
-          label: 'Xóa bộ luyện tập',
+          label: 'Delete the practice set',
           content:
-              'Bạn có chắc chắn muốn xóa bộ luyện tập này? Bạn sẽ không thể hoàn tác lại thao tác này.',
-          labelCancel: 'Không',
-          labelOk: 'Có',
+              'Are you sure you want to delete this workout set? You won\'t be able to undo this action.',
+          labelCancel: 'Are not',
+          labelOk: 'Have',
           onCancel: () {
             Navigator.of(context).pop();
           },
@@ -244,8 +244,8 @@ class WorkoutCollectionController extends GetxController {
         workoutListLength: generatedWorkoutList.length);
 
     displayTime.value = timeValue.value < 1
-        ? '${(timeValue.value * 60).toInt()} giây'
-        : '${timeValue.value.toInt()} phút';
+        ? '${(timeValue.value * 60).toInt()} second'
+        : '${timeValue.value.toInt()} minute';
   }
 
   // hàm load collection setting
@@ -284,13 +284,14 @@ class WorkoutCollectionController extends GetxController {
 
   // hàm load list collection dựa trên cate
   void loadCollectionListBaseOnCategory(Category cate) {
-    // collections = DataService.instance.collectionList
-    //     .where((collection) => collection.categoryIDs.contains(cate.id))
-    //     .toList();
+    collections = DataService.instance.collectionList
+        .where((collection) => collection.categoryIDs.contains(cate.id))
+        .toList();
 
-    collections = workoutCollectionTree
-        .searchComponent(cate.id ?? '', workoutCollectionTree.components)!
-        .getList();
+    ///naseer did changes
+    // collections = workoutCollectionTree
+    //     .searchComponent(cate.id ?? '', workoutCollectionTree.components)!
+    //     .getList();
     Get.toNamed(Routes.workoutCollectionList, arguments: cate);
   }
 

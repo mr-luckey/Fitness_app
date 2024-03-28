@@ -32,12 +32,12 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   void dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     _controller.saveDataToPrefs(_timerController.getTimeInDuration());
     super.dispose();
   }
@@ -62,10 +62,10 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
   @override
   Widget build(BuildContext context) {
     List<String> tabs = [
-      'Dinh dưỡng',
-      'Luyện tập',
-      'Nước',
-      'Bước chân',
+      'Nutrition',
+      'Practice',
+      'Water',
+      'Step',
       'Fasting',
     ];
 
@@ -145,9 +145,9 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
         children: [
           Obx(
             () => FloatingPropertyTile(
-              title: 'Kiểu fasting',
+              title: 'Fasting type',
               value:
-                  '${_controller.getTypeOfFasting(_controller.fastTypeIndex.value)['fastTime']} giờ không ăn',
+                  '${_controller.getTypeOfFasting(_controller.fastTypeIndex.value)['fastTime']} don\'t eat now',
               iconData: Icons.category_outlined,
               onPressed: _controller.timerIsRunning()
                   ? null
@@ -163,11 +163,12 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
                             return Container(
                               alignment: Alignment.center,
                               child: Text(
-                                '${fastType['fastTime']} giờ không ăn - ${fastType['eatTime']} giờ ăn',
+                                '${fastType['fastTime']} don\'t eat now- ${fastType['eatTime']} meal time',
                                 style: Theme.of(context).textTheme.headline4,
                               ),
                             );
                           }
+                          return null;
                         },
                         initialValue: _controller.fastTypeIndex.value,
                         onSelectedItemChanged: (value) {
@@ -207,8 +208,8 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
                 width: MediaQuery.of(context).size.width * 0.75,
                 child: Text(
                   _controller.timerIsRunning()
-                      ? 'Kết thúc Fasting'.tr
-                      : 'Bắt đầu Fasting'.tr,
+                      ? 'End of Fasting'
+                      : 'Start Fasting',
                   style: Theme.of(context).textTheme.button!.copyWith(
                         color: !_controller.timerIsRunning()
                             ? AppColor.accentTextColor
@@ -238,7 +239,7 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
               child: Obx(
                 () => VerticalInfoWidget(
                   title: _controller.fastingStartTimeStr.value,
-                  subtitle: 'Bắt đầu Fasting',
+                  subtitle: 'Start Fasting',
                   reverse: true,
                 ),
               ),
@@ -250,7 +251,7 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
                 () => VerticalInfoWidget(
                   title: _controller.eatingStartTimeStr.value,
                   reverse: true,
-                  subtitle: 'Bắt đầu Eating',
+                  subtitle: 'Start Eating',
                 ),
               ),
             ),
@@ -282,10 +283,10 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
                         .getTypeOfFasting(_controller.fastTypeIndex.value);
                     return CustomConfirmationDialog(
                       icon: Image.asset(GIFAssetString.celebrate, height: 100),
-                      label: 'Hoàn thành Fasting',
+                      label: 'Complete Fasting',
                       content:
-                          'Bạn đã hoành thành ${currentTypeOfFasting['fastTime']} giờ Fasting và ${currentTypeOfFasting['eatTime']} giờ Eating',
-                      labelCancel: 'Đóng',
+                          'You have completed it${currentTypeOfFasting['fastTime']} Fasting hours and${currentTypeOfFasting['eatTime']} Eating hour',
+                      labelCancel: 'Close',
                       textAlign: TextAlign.left,
                       labelTextAlign: TextAlign.center,
                       onCancel: () {
@@ -310,7 +311,7 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
               child: Obx(
                 () => VerticalInfoWidget(
                   title: _controller.fastingEndTimeStr.value,
-                  subtitle: 'Kết thúc Fasting',
+                  subtitle: 'End of Fasting',
                   reverse: true,
                 ),
               ),
@@ -321,7 +322,7 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
               child: Obx(
                 () => VerticalInfoWidget(
                   title: _controller.eatingEndTimeStr.value,
-                  subtitle: 'Kết thúc Eating',
+                  subtitle: 'End Eating',
                   reverse: true,
                 ),
               ),
@@ -341,7 +342,7 @@ class _DailyFastingScreenState extends State<DailyFastingScreen>
           width: 28,
           height: 28,
         ),
-        title: 'Trạng thái cơ thể',
+        title: 'Body condition',
       ),
     );
   }

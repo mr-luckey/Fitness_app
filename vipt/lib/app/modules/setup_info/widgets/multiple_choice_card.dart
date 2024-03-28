@@ -39,9 +39,9 @@ class MultipleChoiceCard extends StatelessWidget {
         onTap: () {
           onSelected();
         },
-        child: subtitle == 'Kiểu cơ thể'.tr
+        child: subtitle == 'Body type'
             ? _buildBodyTypeCard(context, asset)
-            : subtitle == 'Kiểu ngày bình thường'.tr
+            : subtitle == 'Normal day type'
                 ? _buildTypicalDayCard(context, asset)
                 : ListTile(
                     contentPadding: const EdgeInsets.fromLTRB(16, 8, 16, 8),

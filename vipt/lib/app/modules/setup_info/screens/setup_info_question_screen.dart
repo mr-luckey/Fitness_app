@@ -159,7 +159,7 @@ Widget _buildQuestionTitle(context,
   return Column(
     children: [
       Text(
-        title.tr,
+        title,
         style: Theme.of(context).textTheme.headline2,
         textAlign: TextAlign.center,
       ),
@@ -167,7 +167,7 @@ Widget _buildQuestionTitle(context,
         height: 8,
       ),
       Text(
-        description.tr,
+        description,
         style: Theme.of(context).textTheme.bodyText1,
         textAlign: TextAlign.center,
       ),
@@ -190,7 +190,7 @@ Widget _buildNextQuestionButton(
               FocusManager.instance.primaryFocus?.unfocus();
               controller.goToNextQuestion();
             },
-      child: Text('Tiếp theo'.tr, style: Theme.of(context).textTheme.button),
+      child: Text('Next', style: Theme.of(context).textTheme.button),
     ),
   );
 }
@@ -206,7 +206,7 @@ Widget _buildSkipButton(context, SetupInfoController controller) {
         controller.skipQuestion();
       },
       child: Text(
-        'Không có lựa chọn nào ở trên'.tr,
+        'None of the above options',
         style: Theme.of(context).textTheme.button!.copyWith(
               fontSize: 16,
               color: AppColor.textColor.withOpacity(AppColor.subTextOpacity),

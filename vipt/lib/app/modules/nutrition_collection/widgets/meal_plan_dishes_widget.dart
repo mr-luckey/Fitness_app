@@ -19,7 +19,7 @@ class MealPlanDishesWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Ngày $day',
+          'Day $day',
           style: Theme.of(context).textTheme.headline3!.copyWith(
                 color: AppColor.textColor.withOpacity(AppColor.subTextOpacity),
               ),

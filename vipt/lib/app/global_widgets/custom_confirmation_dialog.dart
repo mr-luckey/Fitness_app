@@ -97,7 +97,7 @@ class CustomConfirmationDialog extends StatelessWidget {
                   style: Theme.of(context).textTheme.button,
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: primaryButtonColor,
+                  backgroundColor: primaryButtonColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),

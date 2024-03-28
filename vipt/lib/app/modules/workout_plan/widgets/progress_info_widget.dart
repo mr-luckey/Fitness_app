@@ -58,7 +58,7 @@ class _ProgressInfoWidgetState extends State<ProgressInfoWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Tiến trình',
+                      'Process',
                       style: Theme.of(context).textTheme.headline5!.copyWith(
                             color: AppColor.accentTextColor,
                           ),
@@ -91,7 +91,7 @@ class _ProgressInfoWidgetState extends State<ProgressInfoWidget> {
                       child: Row(
                         children: [
                           Text(
-                            'Ngày ${widget.currentDay}',
+                            'Day ${widget.currentDay}',
                             style:
                                 Theme.of(context).textTheme.headline5!.copyWith(
                                       fontWeight: FontWeight.w900,
@@ -112,10 +112,10 @@ class _ProgressInfoWidgetState extends State<ProgressInfoWidget> {
                                     context: context,
                                     builder: (BuildContext context) {
                                       return CustomConfirmationDialog(
-                                        label: 'Tự động ghi nhận tiến trình',
+                                        label: 'Automatically record progress',
                                         content:
-                                            'Ngày sẽ tự động được đánh dấu là hoàn thành khi calories trong ngày xấp xỉ bằng calories mục tiêu (không chênh lệch quá 100 calories).',
-                                        labelCancel: 'Đóng',
+                                            'The day will automatically be marked as completed when the calories for the day approximately equal the target calories (no more than 100 calories difference).',
+                                        labelCancel: 'Close',
                                         textAlign: TextAlign.left,
                                         onCancel: () {
                                           Navigator.of(context).pop();
@@ -147,11 +147,11 @@ class _ProgressInfoWidgetState extends State<ProgressInfoWidget> {
                               context: context,
                               builder: (BuildContext context) {
                                 return CustomConfirmationDialog(
-                                  label: 'Bắt đầu lại lộ trình?',
+                                  label: 'Restart the route?',
                                   content:
-                                      'Tiến trình sẽ được thiết lập lại từ đầu và sẽ không được lưu lại',
-                                  labelCancel: 'Hủy bỏ',
-                                  labelOk: 'Bắt đầu lại',
+                                      'Progress will be reset from the beginning and will not be saved',
+                                  labelCancel: 'Cancel',
+                                  labelOk: 'Start again',
                                   onCancel: () {
                                     Navigator.of(context).pop();
                                   },
@@ -171,7 +171,7 @@ class _ProgressInfoWidgetState extends State<ProgressInfoWidget> {
                               vertical: 2,
                             ),
                             child: Text(
-                              'Bắt đầu lại',
+                              'Start again',
                               style: Theme.of(context)
                                   .textTheme
                                   .headline5!

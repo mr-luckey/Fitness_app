@@ -31,7 +31,7 @@ class WorkoutCollectionCategoryListScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Bộ luyện tập'.tr,
+            'Training set',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -48,9 +48,9 @@ class WorkoutCollectionCategoryListScreen extends StatelessWidget {
                   onPressed: () {
                     Get.toNamed(Routes.myWorkoutCollectionList);
                   },
-                  title: 'Bộ luyện tập của bạn',
+                  title: 'Your practice set',
                   description:
-                      '${_controller.userCollections.length} bộ bài tập',
+                      '${_controller.userCollections.length} exercise set',
                 ),
               );
             }
@@ -63,7 +63,7 @@ class WorkoutCollectionCategoryListScreen extends StatelessWidget {
               },
               title: cate.name.tr,
               description:
-                  '${_controller.collectionCategories[index - 1].countLeaf()} bộ bài tập',
+                  '${_controller.collectionCategories[index - 1].countLeaf()} exercise set',
             );
           },
           separatorBuilder: (_, index) => const Divider(

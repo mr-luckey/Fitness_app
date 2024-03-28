@@ -23,10 +23,10 @@ class DailyNutritionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> tabs = [
-      'Dinh dưỡng',
-      'Luyện tập',
-      'Nước',
-      'Bước chân',
+      'Nutrition',
+      'Practice',
+      'Water',
+      'Step',
       'Fasting',
     ];
 
@@ -101,7 +101,7 @@ class DailyNutritionScreen extends StatelessWidget {
                           width: 8,
                         ),
                         Text(
-                          'Hôm nay'.tr,
+                          'Today',
                           style:
                               Theme.of(context).textTheme.headline6!.copyWith(
                                     color: AppColor.accentTextColor,
@@ -276,7 +276,7 @@ class DailyNutritionScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(36, 0, 36, 24),
       child: Text(
-        'Chạm vào trái tim xanh để cập nhật lượng thức ăn đã ăn.',
+        'Tap on the green heart to update the amount of food eaten.',
         style: Theme.of(context).textTheme.bodyText1!.copyWith(
               color: AppColor.accentTextColor,
             ),

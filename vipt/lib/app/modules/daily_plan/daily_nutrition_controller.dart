@@ -250,11 +250,11 @@ class DailyNutritionController extends GetxController with TrackerController {
       context: Get.context!,
       builder: (BuildContext context) {
         return CustomConfirmationDialog(
-          label: 'Xóa log thức ăn',
+          label: 'Delete food log',
           content:
-              'Bạn có chắc chắn muốn xóa log này? Bạn sẽ không thể hoàn tác lại thao tác này.',
-          labelCancel: 'Không',
-          labelOk: 'Có',
+              'Are you sure you want to delete this log? You won\'t be able to undo this action.',
+          labelCancel: 'Are not',
+          labelOk: 'Have',
           onCancel: () {
             Navigator.of(context).pop();
           },

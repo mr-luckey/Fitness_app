@@ -7,6 +7,6 @@ class CloudStorageService {
   firebase_storage.FirebaseStorage storage =
       firebase_storage.FirebaseStorage.instance;
 
-  final String _storageLink = 'gs://vipt-506b2.appspot.com';
+  final String _storageLink = 'gs://fitness-app-b53a5.appspot.com';
   String get storageLink => _storageLink;
 }

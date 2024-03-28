@@ -54,7 +54,7 @@ Widget _buildDatePickerField(context, TextEditingController controller,
         Icons.calendar_today_rounded,
         size: 18,
       ),
-      hintText: 'Chạm vào để chọn'.tr,
+      hintText: 'Touch to select',
       hintStyle: Theme.of(context).textTheme.subtitle2,
       fillColor: AppColor.textFieldFill,
       border: const OutlineInputBorder(

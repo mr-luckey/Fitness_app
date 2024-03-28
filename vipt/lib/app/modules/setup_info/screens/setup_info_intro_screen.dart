@@ -44,15 +44,14 @@ Widget _buildIntro(context) {
         ),
       ),
       Text(
-        'Cập nhật các thông tin cơ bản.'.tr,
+        'Update basic information.',
         style: Theme.of(context).textTheme.headline1,
       ),
       const SizedBox(
         height: 8,
       ),
       Text(
-        'Cập nhật thông tin và trả lời các câu hỏi này để tôi có thể đề xuất lộ trình luyện tập và dinh dưỡng cụ thể dành riêng cho bạn.'
-            .tr,
+        'Stay informed and answer these questions so I can recommend a specific training and nutrition plan just for you.',
         style: Theme.of(context).textTheme.bodyText1,
       ),
       const SizedBox(
@@ -66,7 +65,7 @@ Widget _buildIntro(context) {
           onPressed: () {
             Get.toNamed(Routes.setupInfoQuestion);
           },
-          child: Text('Bắt đầu'.tr, style: Theme.of(context).textTheme.button),
+          child: Text('Begin', style: Theme.of(context).textTheme.button),
         ),
       ),
       // Container(
@@ -90,4 +89,3 @@ Widget _buildIntro(context) {
 }
 
 //
-

@@ -49,7 +49,7 @@ class AllPlanNutritionScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'DANH SÁCH BỮA ĂN',
+                    'MEAL LIST',
                     style: Theme.of(context).textTheme.headline4!.copyWith(
                           fontWeight: FontWeight.w900,
                         ),
@@ -120,7 +120,7 @@ class AllPlanNutritionScreen extends StatelessWidget {
                   //   height: 24,
                   // ),
                   Text(
-                    'NGÀY ${i ~/ collectionPerDay + 1}',
+                    'DAY ${i ~/ collectionPerDay + 1}',
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),

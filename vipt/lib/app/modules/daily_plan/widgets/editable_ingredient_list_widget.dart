@@ -13,7 +13,7 @@ class EditableIngredientListWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Danh sách nguyên liệu'.tr,
+        Text('List of ingredients',
             style: Theme.of(context).textTheme.headline3),
         const SizedBox(
           height: 4,
@@ -45,7 +45,7 @@ class EditableIngredientListWidget extends StatelessWidget {
             color: AppColor.textColor.withOpacity(AppColor.subTextOpacity),
           ),
           title: Text(
-            'Thêm nguyên liệu'.tr,
+            'Add ingredients',
             style: Theme.of(context).textTheme.bodyText1!.copyWith(
                   color:
                       AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -69,7 +69,7 @@ class EditableIngredientListWidget extends StatelessWidget {
             color: AppColor.textColor.withOpacity(AppColor.subTextOpacity),
           ),
           title: Text(
-            'Xóa hết'.tr,
+            'Remove all',
             style: Theme.of(context).textTheme.bodyText1!.copyWith(
                   color:
                       AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -88,9 +88,9 @@ class EditableIngredientListWidget extends StatelessWidget {
           tileColor: AppColor.ingredientTileColor,
           enableEdittingAmount: true,
           ingredients: {
-            'Khoai tây': '100g',
-            'Khoai tây 1': '100g',
-            'Khoai tây 2': '100g'
+            'Potatoes': '100g',
+            'Potatoes 1': '100g',
+            'Potatoes 2': '100g'
           },
         ),
         const SizedBox(

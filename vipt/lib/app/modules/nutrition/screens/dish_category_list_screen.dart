@@ -30,7 +30,7 @@ class DishCategoryListScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Món ăn'.tr,
+            'Dish',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -47,7 +47,7 @@ class DishCategoryListScreen extends StatelessWidget {
               _controller.loadContent(mealCate);
             },
             title: mealCate.name,
-            description: '${mealCate.countLeaf()} món ăn',
+            description: '${mealCate.countLeaf()} dish',
           );
         },
         separatorBuilder: (_, index) {

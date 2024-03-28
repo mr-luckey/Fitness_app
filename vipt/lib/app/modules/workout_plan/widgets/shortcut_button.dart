@@ -6,7 +6,7 @@ class ShortcutButton extends StatelessWidget {
   final String title;
   final Widget? icon;
   const ShortcutButton(
-      {Key? key, this.onPressed, this.title = 'Phím tắt', this.icon})
+      {Key? key, this.onPressed, this.title = 'Shortcut', this.icon})
       : super(key: key);
 
   @override

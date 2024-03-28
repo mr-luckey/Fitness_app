@@ -22,11 +22,11 @@ class SettingController extends GetxController {
       context: Get.context!,
       builder: (BuildContext context) {
         return CustomConfirmationDialog(
-          label: 'Bạn thực sự muốn thay đổi thông tin ban đầu?',
+          label: 'Do you really want to change the original information?',
           content:
-              'Tiến trình hiện tại sẽ bị thiết lập lại từ đầu và sẽ không được lưu lại',
-          labelCancel: 'Hủy bỏ',
-          labelOk: 'Xác nhận',
+              'Current progress will be reset from the beginning and will not be saved',
+          labelCancel: 'Cancel',
+          labelOk: 'Confirm',
           onCancel: () {
             Navigator.of(context).pop();
           },
@@ -45,11 +45,11 @@ class SettingController extends GetxController {
       context: Get.context!,
       builder: (BuildContext context) {
         return CustomConfirmationDialog(
-          label: 'Bạn thực sự muốn thay đổi mục tiêu cân nặng?',
+          label: 'Do you really want to change your weight goals?',
           content:
-              'Tiến trình hiện tại sẽ bị thiết lập lại từ đầu và sẽ không được lưu lại',
-          labelCancel: 'Hủy bỏ',
-          labelOk: 'Xác nhận',
+              'Current progress will be reset from the beginning and will not be saved',
+          labelCancel: 'Cancel',
+          labelOk: 'Confirm',
           onCancel: () {
             Navigator.of(context).pop();
           },
@@ -76,10 +76,10 @@ class SettingController extends GetxController {
               child: Icon(Icons.error_rounded,
                   color: AppColor.errorColor, size: 48),
             ),
-            label: 'Đã xảy ra lỗi',
-            content: 'Giá trị cân nặng không đúng định dạng',
+            label: 'Error! An error occurred. Please try again later',
+            content: 'The weight value is not in the correct format',
             showOkButton: false,
-            labelCancel: 'Đóng',
+            labelCancel: 'Close',
             onCancel: () {
               Navigator.of(context).pop();
             },
@@ -117,7 +117,7 @@ class SettingController extends GetxController {
         context: Get.context!,
         builder: (_) {
           return InputDialog(
-              title: 'Nhập mục tiêu cân nặng',
+              title: 'Enter weight goal',
               weightEditingController: TextEditingController(
                   text: DataService.currentUser!.goalWeight.toString()),
               logWeight: updateWeightGoal);

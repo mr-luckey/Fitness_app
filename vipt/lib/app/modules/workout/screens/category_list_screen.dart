@@ -31,7 +31,7 @@ class CategoryListScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Bài tập'.tr,
+            'Exercise',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -50,7 +50,7 @@ class CategoryListScreen extends StatelessWidget {
               },
               title: cate.name,
               description:
-                  '${_controller.workoutCategories[index].countLeaf()} bài tập',
+                  '${_controller.workoutCategories[index].countLeaf()} exercise',
             );
           },
           separatorBuilder: (_, index) {

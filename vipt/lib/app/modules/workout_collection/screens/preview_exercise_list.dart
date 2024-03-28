@@ -35,7 +35,7 @@ class PreviewExerciseList extends StatelessWidget {
         label: SizedBox(
           width: screenSize.width * 0.75,
           child: Text(
-            'Bắt đầu luyện tập'.tr,
+            'Start practicing',
             style: Theme.of(context).textTheme.button,
             textAlign: TextAlign.center,
           ),
@@ -96,7 +96,7 @@ class PreviewExerciseList extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "BÀI TẬP MỖI VÒNG".tr,
+                          "EXERCISES PER ROUND",
                           style:
                               Theme.of(context).textTheme.subtitle2!.copyWith(
                                     fontWeight: FontWeight.bold,
@@ -106,7 +106,7 @@ class PreviewExerciseList extends StatelessWidget {
                           height: 2,
                         ),
                         Text(
-                          'Số vòng: ${_controller.collectionSetting.value.round}'
+                          'Number of rounds: ${_controller.collectionSetting.value.round}'
                               .tr,
                           style:
                               Theme.of(context).textTheme.bodyText1!.copyWith(
@@ -150,7 +150,7 @@ class PreviewExerciseList extends StatelessWidget {
         Container(
           alignment: Alignment.center,
           child: Text(
-            'Xem trước bài tập'.tr,
+            'Preview the exercise',
             style: Theme.of(context).textTheme.headline2!.copyWith(
                   color: AppColor.accentTextColor,
                 ),
@@ -160,7 +160,7 @@ class PreviewExerciseList extends StatelessWidget {
           alignment: Alignment.center,
           padding: const EdgeInsets.symmetric(vertical: 8),
           child: Text(
-            'Giữ & kéo thả để thay đổi thứ tự bài tập'.tr,
+            'Hold & drag and drop to change exercise order',
             style: Theme.of(context).textTheme.subtitle2!.copyWith(
                   color: AppColor.accentTextColor,
                 ),
@@ -192,7 +192,7 @@ class PreviewExerciseList extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Nhấn để xáo trộn thứ tự'.tr,
+                'Click to shuffle the order',
                 style: Theme.of(context).textTheme.subtitle2!.copyWith(
                       color: Theme.of(context).primaryColor,
                     ),
@@ -222,7 +222,7 @@ class PreviewExerciseList extends StatelessWidget {
                     asset: workout.thumbnail,
                     title: workout.name,
                     description:
-                        '${_controller.collectionSetting.value.exerciseTime} giây',
+                        '${_controller.collectionSetting.value.exerciseTime} second',
                     onPressed: () {
                       Get.toNamed(Routes.exerciseDetail, arguments: workout);
                     },
@@ -251,7 +251,7 @@ class PreviewExerciseList extends StatelessWidget {
                         width: 16,
                       ),
                       Text(
-                        'Nghỉ ${_controller.collectionSetting.value.restTime} giây',
+                        'Rest ${_controller.collectionSetting.value.restTime} second',
                         style: Theme.of(context).textTheme.bodyText1!.copyWith(
                               color: AppColor.textColor.withOpacity(
                                 AppColor.subTextOpacity,

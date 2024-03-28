@@ -5,7 +5,7 @@ class CameraButton extends StatelessWidget {
   final String title;
   final IconData? iconData;
   const CameraButton(
-      {Key? key, this.onPressed, this.title = 'Chụp ảnh', this.iconData})
+      {Key? key, this.onPressed, this.title = 'Take a photo', this.iconData})
       : super(key: key);
 
   @override

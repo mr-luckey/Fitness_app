@@ -33,7 +33,7 @@ class FinishPlanScreen extends StatelessWidget {
         label: SizedBox(
           width: MediaQuery.of(context).size.width * 0.75,
           child: Text(
-            'Xong'.tr,
+            'Finished',
             style: Theme.of(context).textTheme.button,
             textAlign: TextAlign.center,
           ),
@@ -77,10 +77,9 @@ class FinishPlanScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 28.0),
                       child: IntroCollectionWidget(
-                          title: "KẾT THÚC".tr,
+                          title: "END",
                           description:
-                              "Lộ trình 15 ngày đã kết thúc, hãy cùng xem lại kết quả của bạn."
-                                  .tr),
+                              "The 15-day roadmap has ended, let's review your results."),
                     ),
                     const SizedBox(
                       height: 16,
@@ -95,7 +94,7 @@ class FinishPlanScreen extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
-                            child: Text('Thống kê cân nặng',
+                            child: Text('Weight statistics',
                                 style: Theme.of(context).textTheme.headline5),
                           ),
                           Obx(
@@ -123,7 +122,7 @@ class FinishPlanScreen extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
-                            child: Text('Mức độ hoàn thành mục tiêu',
+                            child: Text('Level of goal accomplishment',
                                 style: Theme.of(context).textTheme.headline5),
                           ),
                           ProgressInfoWidget(

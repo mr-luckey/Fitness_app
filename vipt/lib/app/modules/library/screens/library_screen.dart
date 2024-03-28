@@ -22,7 +22,7 @@ class LibraryScreen extends StatelessWidget {
         title: Hero(
           tag: 'titleAppBar',
           child: Text(
-            'Thư viện'.tr,
+            'Library',
             style: Theme.of(context).textTheme.headline3,
           ),
         ),
@@ -35,8 +35,9 @@ class LibraryScreen extends StatelessWidget {
             onPressed: () async {
               Get.toNamed(Routes.workoutCategory);
             },
-            title: 'Bài tập',
-            description: 'Tra cứu thông tin chi tiết của một bài tập cụ thể',
+            title: 'Exercise',
+            description:
+                'Look up detailed information about a specific exercise',
           ),
           const Divider(
             indent: 24,
@@ -46,9 +47,8 @@ class LibraryScreen extends StatelessWidget {
             onPressed: () {
               Get.toNamed(Routes.workoutCollectionCategory);
             },
-            title: 'Bộ luyện tập',
-            description:
-                'Tra cứu các bộ sưu tập gồm nhiều bài tập để tập luyện',
+            title: 'Training set',
+            description: 'Browse collections of exercises to practice',
           ),
           const Divider(
             indent: 24,
@@ -58,8 +58,8 @@ class LibraryScreen extends StatelessWidget {
             onPressed: () {
               Get.toNamed(Routes.dishCategory);
             },
-            title: 'Món ăn',
-            description: 'Tra cứu thông tin chi tiết của một món ăn cụ thể',
+            title: 'Dish',
+            description: 'Look up detailed information about a specific dish',
           ),
           const Divider(
             indent: 24,
@@ -69,8 +69,8 @@ class LibraryScreen extends StatelessWidget {
             onPressed: () {
               Get.toNamed(Routes.mealPlanList);
             },
-            title: 'Bộ dinh dưỡng',
-            description: 'Tra cứu các bộ sưu tập gồm nhiều món ăn',
+            title: 'Department of nutrition',
+            description: 'Look up collections that include a variety of dishes',
           ),
           const Divider(
             indent: 24,

@@ -23,7 +23,7 @@ class DishIngredientsWidget extends StatelessWidget {
       children: [
         if (showTitle)
           Text(
-            'Nguyên liệu',
+            'Ingredient',
             style: Theme.of(context).textTheme.headline3!.copyWith(
                   color:
                       AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -59,7 +59,7 @@ class DishIngredientsWidget extends StatelessWidget {
                       builder: (BuildContext context) {
                         return InputAmountDialog(
                           title:
-                              'Khối lượng ${ingredients.keys.elementAt(i).toLowerCase()}',
+                              'Mass ${ingredients.keys.elementAt(i).toLowerCase()}',
                           unit: ingredients.values
                               .elementAt(i)
                               .replaceAll(RegExp(r"[0-9]"), ""),
@@ -68,7 +68,7 @@ class DishIngredientsWidget extends StatelessWidget {
                                   .replaceAll(RegExp(r"\D"), "")) ??
                               0,
                           confirmButtonColor: AppColor.nutriBackgroundColor,
-                          confirmButtonText: 'Xác nhận',
+                          confirmButtonText: 'Confirm',
                           sliderActiveColor: AppColor.nutriDarkBackgroundColor,
                           sliderInactiveColor:
                               AppColor.nutriBackgroundColor.withOpacity(

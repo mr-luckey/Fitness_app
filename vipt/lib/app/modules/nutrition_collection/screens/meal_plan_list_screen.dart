@@ -32,7 +32,7 @@ class MealPlanListScreen extends StatelessWidget {
           title: Hero(
             tag: 'titleAppBar',
             child: Text(
-              'Kế hoạch dinh dưỡng'.tr,
+              'Nutrition plan',
               style: Theme.of(context).textTheme.headline3,
             ),
           ),
@@ -49,7 +49,7 @@ class MealPlanListScreen extends StatelessWidget {
                 asset: mealCollections[index].asset,
                 title: mealCollections[index].title,
                 description:
-                    '${mealCollections[index].dateToMealID.length} ngày'.tr,
+                    '${mealCollections[index].dateToMealID.length} day'.tr,
               );
             },
             separatorBuilder: (context, index) => const Divider(

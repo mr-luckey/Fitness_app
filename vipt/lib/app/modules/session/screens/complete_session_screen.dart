@@ -43,7 +43,7 @@ class CompleteSessionScreen extends StatelessWidget {
           label: SizedBox(
             width: MediaQuery.of(context).size.width * 0.75,
             child: Text(
-              'Xong'.tr,
+              'Finished',
               style: Theme.of(context).textTheme.button,
               textAlign: TextAlign.center,
             ),
@@ -87,17 +87,17 @@ class CompleteSessionScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 28.0),
                         child: IntroCollectionWidget(
-                            title: "HOÀN THÀNH".tr,
+                            title: "COMPLETE",
                             description:
-                                "Chúc mừng bạn đã hoàn thành bộ luyện tập này"
-                                    .tr),
+                                "Congratulations on completing this practice set"),
                       ),
                       const SizedBox(
                         height: 16,
                       ),
                       CompleteIndicatorDisplayWidget(
-                        timeUnit:
-                            _controller.timeConsumed / 60 < 1 ? 'giây' : 'phút',
+                        timeUnit: _controller.timeConsumed / 60 < 1
+                            ? 'second'
+                            : 'minute',
                         timeString: _controller.timeConsumed / 60 < 1
                             ? (_controller.timeConsumed.toInt()).toString()
                             : (_controller.timeConsumed / 60).ceil().toString(),

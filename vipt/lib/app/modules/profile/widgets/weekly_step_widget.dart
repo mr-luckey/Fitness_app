@@ -27,7 +27,7 @@ class WeeklyStepWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              'Số bước chân mỗi tuần',
+              'Number of steps per week',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                     color:
                         AppColor.textColor.withOpacity(AppColor.subTextOpacity),
@@ -42,7 +42,7 @@ class WeeklyStepWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Obx(() => _buildExtraInfo(context,
-                title: 'bước chân',
+                title: 'step',
                 value: _controller.stepCountWeekly.value.toString())),
           ],
         ),
@@ -53,8 +53,8 @@ class WeeklyStepWidget extends StatelessWidget {
           () => StatisticBarChart(
             values: _controller.stepCountList,
             title:
-                "Tuần ${_controller.stepStartDateStr} - ${_controller.stepEndDateStr}",
-            description: "Số bước chân",
+                "Week ${_controller.stepStartDateStr} - ${_controller.stepEndDateStr}",
+            description: "Number of steps",
             titleColor: AppColor.statisticStepTitleColor,
             descriptionColor: AppColor.statisticStepDescriptionColor,
             backgroundColor: AppColor.statisticStepBackgroundColor,

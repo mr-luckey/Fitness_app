@@ -72,10 +72,10 @@ class WorkoutPlanController extends GetxController {
               child: Icon(Icons.error_rounded,
                   color: AppColor.errorColor, size: 48),
             ),
-            label: 'Đã xảy ra lỗi',
-            content: 'Giá trị cân nặng không đúng định dạng',
+            label: 'Error! An error occurred. Please try again later',
+            content: 'The weight value is not in the correct format',
             showOkButton: false,
-            labelCancel: 'Đóng',
+            labelCancel: 'Close',
             onCancel: () {
               Navigator.of(context).pop();
             },
@@ -235,7 +235,7 @@ class WorkoutPlanController extends GetxController {
             planExercise.where((p0) => p0.listID == col.id).toList();
         int index = collection.indexOf(col);
         return WorkoutCollection(col.id.toString(),
-            title: 'Bài tập thứ ${index + 1}',
+            title: 'Second exercise ${index + 1}',
             description: '',
             asset: '',
             generatorIDs: exerciseList.map((e) => e.exerciseID).toList(),
@@ -257,7 +257,7 @@ class WorkoutPlanController extends GetxController {
         int index = collection.indexOf(col);
 
         return WorkoutCollection(col.id.toString(),
-            title: 'Bài tập thứ ${index + 1}',
+            title: 'Second exercise ${index + 1}',
             description: '',
             asset: '',
             generatorIDs: exerciseList.map((e) => e.exerciseID).toList(),
@@ -404,10 +404,10 @@ class WorkoutPlanController extends GetxController {
             child:
                 Icon(Icons.error_rounded, color: AppColor.errorColor, size: 48),
           ),
-          label: 'Đã xảy ra lỗi',
-          content: 'Không tìm thấy danh sách streak',
+          label: 'Error! An error occurred. Please try again later',
+          content: 'No streak list found',
           showOkButton: false,
-          labelCancel: 'Đóng',
+          labelCancel: 'Close',
           onCancel: () {
             Navigator.of(context).pop();
           },
@@ -496,8 +496,8 @@ class WorkoutPlanController extends GetxController {
     await loadWeightValues();
     await loadDailyGoalCalories();
     await loadDailyCalories();
-    await loadPlanExerciseCollectionList(currentWorkoutPlan!.id ?? 0);
-    await loadWorkoutPlanMealList(currentWorkoutPlan!.id ?? 0);
+    await loadPlanExerciseCollectionList(currentWorkoutPlan?.id ?? 0);
+    await loadWorkoutPlanMealList(currentWorkoutPlan?.id ?? 0);
     await loadPlanStreak();
     isLoading.value = false;
   }

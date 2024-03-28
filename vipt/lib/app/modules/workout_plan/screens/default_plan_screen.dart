@@ -17,7 +17,7 @@ class DefaultPlanScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Chưa có lộ trình nào được đề xuất',
+              'No route has been proposed yet',
               style: Theme.of(context).textTheme.bodyText2,
             ),
             Padding(
@@ -39,7 +39,7 @@ class DefaultPlanScreen extends StatelessWidget {
                             color: Colors.transparent),
                         Expanded(
                           child: Text(
-                            'Đề xuất lộ trình mới',
+                            'Propose new route',
                             style:
                                 Theme.of(context).textTheme.headline5!.copyWith(
                                       color: AppColor.accentTextColor,

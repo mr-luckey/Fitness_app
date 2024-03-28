@@ -35,7 +35,7 @@ class WaterHistoryScreen extends StatelessWidget {
         ),
         centerTitle: true,
         title: Text(
-          'Lịch sử uống nước',
+          'History of drinking water',
           style: Theme.of(context).textTheme.headline4!.copyWith(
                 color: AppColor.accentTextColor,
               ),
@@ -93,7 +93,7 @@ class WaterHistoryScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Lịch sử',
+                    'History',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                           color: AppColor.accentTextColor,
                         ),
@@ -109,7 +109,7 @@ class WaterHistoryScreen extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: HistoryTile(
-                  title: 'Nước',
+                  title: 'Water',
                   description: log.waterVolume.toString() + 'ml',
                   date: '${log.date.day}/${log.date.month}/${log.date.year}',
                   time: '${log.date.hour}:${log.date.minute}',
@@ -136,11 +136,11 @@ class WaterHistoryScreen extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return InputAmountDialog(
-                title: 'Nước',
+                title: 'Water',
                 unit: 'ml',
                 value: 200,
                 confirmButtonColor: AppColor.waterBackgroundColor,
-                confirmButtonText: 'Thêm',
+                confirmButtonText: 'More',
                 sliderActiveColor: AppColor.waterDarkBackgroundColor,
                 sliderInactiveColor: AppColor.waterBackgroundColor.withOpacity(
                   AppColor.subTextOpacity,

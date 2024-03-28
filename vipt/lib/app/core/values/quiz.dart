@@ -19,67 +19,65 @@ class AppQuiz {
   static Map<Question, List<Answer>> questions = {
     // Module 1
     Question(
-        title: 'Tên của bạn là gì?'.tr,
+        title: 'What\'s your name?',
         description: '',
         moduleParent: 0,
         moduleIndex: 1,
         propertyLink: PropertyLink.userName,
         layoutType: QuestionLayoutType.textField): [],
     Question(
-        title: 'Mục tiêu về cân nặng'.tr,
-        description: 'Bạn muốn mình có thể đạt được mức cân nặng bao nhiêu?'.tr,
+        title: 'Weight goals',
+        description: 'How much weight do you want to be able to achieve?',
         moduleParent: 0,
         moduleIndex: 2,
         propertyLink: PropertyLink.userGoalWeight,
         layoutType: QuestionLayoutType.measurementPicker): [],
     Question(
-        title: 'Giới tính'.tr,
+        title: 'Sex',
         propertyLink: PropertyLink.userGender,
         description:
-            'Việc thu thập thông tin này sẽ giúp tôi có thể tính toán BMI và tạo ra một kế hoạch cân nặng lành mạnh cá nhân cho riêng bạn.'
+            'Collecting this information will enable me to calculate your BMI and create a personalized healthy weight plan for you.'
                 .tr,
         moduleParent: 0,
         moduleIndex: 3,
         layoutType: QuestionLayoutType.singleChoiceOneColumn): [
       Answer(
-          title: 'Nam'.tr,
-          description: 'Về mặt sinh học có giới tính nam'.tr,
+          title: 'Name',
+          description: 'Biologically there is male sex',
           asset: SVGAssetString.male,
           enumValue: Gender.male),
       Answer(
-          title: 'Nữ'.tr,
-          description: 'Về mặt sinh học có giới tính nữ'.tr,
+          title: 'Female',
+          description: 'Biologically, there is a female sex',
           asset: SVGAssetString.female,
           enumValue: Gender.female),
       Answer(
-          title: 'Khác'.tr,
-          description: 'Song tính, á tính, đồng tính,...'.tr,
+          title: 'Other',
+          description: 'Bisexual, demisexual, homosexual,...',
           asset: SVGAssetString.otherGender,
           enumValue: Gender.other),
     ],
     Question(
         propertyLink: PropertyLink.userDateOfBirth,
-        title: 'Ngày sinh'.tr,
+        title: 'Date of birth',
         description:
-            'Việc thu thập thông tin này sẽ giúp tôi có thể tính toán BMI và tạo ra một kế hoạch cân nặng lành mạnh cá nhân cho riêng bạn.'
-                .tr,
+            'Collecting this information will enable me to calculate your BMI and create a personalized healthy weight plan for you.',
         moduleParent: 0,
         moduleIndex: 4,
         layoutType: QuestionLayoutType.datePicker): [],
     Question(
         propertyLink: PropertyLink.userWeight,
-        title: 'Cân nặng hiện tại'.tr,
+        title: 'Current weight'.tr,
         description:
-            'Việc thu thập thông tin này sẽ giúp tôi có thể tính toán BMI và tạo ra một kế hoạch cân nặng lành mạnh cá nhân cho riêng bạn.'
-                .tr,
+            'Collecting this information will enable me to calculate your BMI and create a personalized healthy weight plan for you.',
         moduleParent: 0,
         moduleIndex: 5,
         layoutType: QuestionLayoutType.measurementPicker): [],
     Question(
         propertyLink: PropertyLink.userHeight,
-        title: 'Chiều cao hiện tại'.tr,
+        title: 'Current height',
         description:
-            'Việc thu thập thông tin này sẽ giúp tôi có thể tính toán BMI và tạo ra một kế hoạch cân nặng lành mạnh cá nhân cho riêng bạn.'
+            'Collecting this information will enable me to calculate your BMI and create a personalized healthy weight plan for you.'
                 .tr,
         moduleParent: 0,
         moduleIndex: 6,
@@ -261,36 +259,35 @@ class AppQuiz {
     //       enumValue: TypicalDay.workPhysically),
     // ],
     Question(
-        title: 'Bạn thường vận động như thế nào?'.tr,
-        description:
-            'Bạn dành ra bao nhiêu buổi vào mỗi tuần cho việc tập luyện?'.tr,
+        title: 'How do you usually exercise?',
+        description: 'How many sessions per week do you spend exercising?',
         moduleParent: 1,
         propertyLink: PropertyLink.userActiveFrequency,
         moduleIndex: 2,
         layoutType: QuestionLayoutType.singleChoiceOneColumn): [
       Answer(
-          title: 'Không nhiều'.tr,
-          description: 'Không đều đặn hoặc không có'.tr,
+          title: 'Not much',
+          description: 'Irregular or absent',
           asset: null,
           enumValue: ActiveFrequency.notMuch),
       Answer(
-          title: 'Ít'.tr,
-          description: 'Từ 1 đến 2 buổi trong một tuần'.tr,
+          title: 'Little',
+          description: 'From 1 to 2 sessions a week',
           asset: null,
           enumValue: ActiveFrequency.few),
       Answer(
-          title: 'Trung bình'.tr,
-          description: 'Từ 3 đến 5 buổi trong một tuần'.tr,
+          title: 'Medium',
+          description: 'From 3 to 5 sessions a week',
           asset: null,
           enumValue: ActiveFrequency.average),
       Answer(
-          title: 'Nhiều'.tr,
-          description: 'Từ 6 đến 7 buổi trong một tuần'.tr,
+          title: 'Much',
+          description: 'From 6 to 7 sessions a week',
           asset: null,
           enumValue: ActiveFrequency.much),
       Answer(
-          title: 'Rất Nhiều'.tr,
-          description: 'Hoạt động cường độ cao xuyên suốt cả tuần'.tr,
+          title: 'So many',
+          description: 'High-intensity activity throughout the week',
           asset: null,
           enumValue: ActiveFrequency.soMuch),
     ],

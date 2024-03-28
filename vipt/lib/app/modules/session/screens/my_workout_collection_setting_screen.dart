@@ -72,7 +72,7 @@ class MyWorkoutCollectionSettingScreen extends StatelessWidget {
                   return IndicatorDisplayWidget(
                     displayTime: '${_controller.displayTime}'.tr,
                     displayCaloValue:
-                        '${_controller.caloValue.value.toInt()} calo'.tr,
+                        '${_controller.caloValue.value.toInt()} calories. calories',
                   );
                 }),
                 const SizedBox(
@@ -83,7 +83,7 @@ class MyWorkoutCollectionSettingScreen extends StatelessWidget {
                       displayDescription: false,
                       workoutList: _controller.generatedWorkoutList,
                       displayExerciseTime:
-                          '${_controller.collectionSetting.value.exerciseTime} giây');
+                          '${_controller.collectionSetting.value.exerciseTime} second');
                 }),
                 SizedBox(
                   height: Theme.of(context).textTheme.button!.fontSize! * 4,

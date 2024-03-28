@@ -73,10 +73,10 @@ class _PlanTabHolderState extends State<PlanTabHolder>
                 ),
             tabs: const [
               Tab(
-                text: 'Luyện tập',
+                text: 'Practice',
               ),
               Tab(
-                text: 'Ăn uống',
+                text: 'Eat and drink',
               ),
             ],
           ),
@@ -98,7 +98,7 @@ class _PlanTabHolderState extends State<PlanTabHolder>
                   width: double.infinity,
                   child: TextButton(
                     child: Text(
-                      'Xem tất cả các ngày',
+                      'View all days',
                       style: Theme.of(context).textTheme.button!.copyWith(
                             fontSize: 16,
                             color: AppColor.primaryColor,
@@ -140,7 +140,7 @@ class _PlanTabHolderState extends State<PlanTabHolder>
                           width: double.infinity,
                           child: TextButton(
                             child: Text(
-                              'Xem tất cả các ngày',
+                              'View all days',
                               style:
                                   Theme.of(context).textTheme.button!.copyWith(
                                         fontSize: 16,
@@ -198,10 +198,10 @@ class _PlanTabHolderState extends State<PlanTabHolder>
               child: Icon(Icons.error_rounded,
                   color: AppColor.errorColor, size: 48),
             ),
-            label: 'Đã xảy ra lỗi',
-            content: 'Không tìm thấy cài đặt bộ luyện tập',
+            label: 'Error! An error occurred. Please try again later',
+            content: 'Training set settings not found',
             showOkButton: false,
-            labelCancel: 'Đóng',
+            labelCancel: 'Close',
             onCancel: () {
               Navigator.of(context).pop();
             },
@@ -269,7 +269,7 @@ class _PlanTabHolderState extends State<PlanTabHolder>
                   //   height: 24,
                   // ),
                   Text(
-                    'NGÀY ${i ~/ collectionPerDay + 1}',
+                    'DAY ${i ~/ collectionPerDay + 1}',
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
@@ -357,7 +357,7 @@ class _PlanTabHolderState extends State<PlanTabHolder>
                   //   height: 24,
                   // ),
                   Text(
-                    'NGÀY ${i ~/ collectionPerDay + 1}',
+                    'DAY ${i ~/ collectionPerDay + 1}',
                     style: Theme.of(context).textTheme.subtitle2!.copyWith(
                           fontWeight: FontWeight.bold,
                         ),

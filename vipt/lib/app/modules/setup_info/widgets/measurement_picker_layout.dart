@@ -102,7 +102,7 @@ Widget _buildMeasurementField(
             errorText: errorText,
             contentPadding: const EdgeInsets.symmetric(horizontal: 20),
             filled: true,
-            hintText: 'Điền vào đây'.tr,
+            hintText: 'Fill in here',
             hintStyle: Theme.of(context).textTheme.subtitle2,
             fillColor: AppColor.textFieldFill,
             border: const OutlineInputBorder(

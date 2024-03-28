@@ -9,7 +9,7 @@ class InputDialog extends StatelessWidget {
   final String title;
   const InputDialog(
       {Key? key,
-      this.title = 'Nhập cân nặng hiện tại',
+      this.title = 'Enter current weight',
       required this.weightEditingController,
       required this.logWeight})
       : super(key: key);
@@ -67,7 +67,7 @@ class InputDialog extends StatelessWidget {
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                   filled: true,
-                  hintText: 'Điền vào đây'.tr,
+                  hintText: 'Fill in here',
                   hintStyle: Theme.of(context).textTheme.subtitle2,
                   fillColor: AppColor.textFieldFill,
                   border: const OutlineInputBorder(
@@ -103,7 +103,7 @@ class InputDialog extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: Text(
-                      'Xác nhận',
+                      'Confirm',
                       style: Theme.of(context).textTheme.button,
                       textAlign: TextAlign.center,
                     ),
