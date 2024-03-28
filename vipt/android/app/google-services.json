@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "215164294542",
+    "project_id": "fitness-app-b53a5",
+    "storage_bucket": "fitness-app-b53a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215164294542:android:28f9513518249be218c0df",
+        "android_client_info": {
+          "package_name": "com.appware.fitnesspro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215164294542-vuqakha6h79s43dt6iqcpttejn0pbdt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appware.fitnesspro",
+            "certificate_hash": "75c6e16e6a662c8a2c4baa27c87f5eb953ff7bf9"
+          }
+        },
+        {
+          "client_id": "215164294542-grkiemjthbj3i9l2bebio14pt8rhhlka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxqPImHmwu0kUR5svHpEvm-skj-6uMiss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215164294542-grkiemjthbj3i9l2bebio14pt8rhhlka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
